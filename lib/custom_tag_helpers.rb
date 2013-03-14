@@ -58,8 +58,8 @@ module CustomTagHelpers
   def nav(items, attrs = {})
     attrs_to_merge = [:type, :rel].freeze
     capture_haml do
-      haml_tag :nav, attrs do
-        haml_tag :ul do
+      haml_tag :nav do
+        haml_tag :ul, attrs do
           items.each do |item|
             item, item_options = item.is_a?(Hash) ? item.to_a.flatten : [item, {}]
             item_options       = {:path => item_options} if item_options.is_a? String
@@ -67,16 +67,20 @@ module CustomTagHelpers
             path        = item_options[:path]        || "/#{item.downcase.dasherize}"
             path_regexp = item_options[:path_regexp] || /^#{path.gsub('.html', '')}/
 
+
             haml_tag :li, :class => item.downcase do
               new_attrs = {
                 :href  => path,
                 :class => ('active' if request.path =~ path_regexp),
-                :title => "Read about #{item.downcase}"
+                # this is used for development only!
+                # :href  => path + '.html',
+                # :class => ('active' if request.path.gsub('.html', '') == path.gsub('/', '')),
+                :title => "Read about #{item.downcase}",
+                :data => {:filter => item.downcase}
               }
               attrs_to_merge.each do |key|
                 new_attrs.merge! key => attrs[key] if attrs[key]
               end
-
               haml_tag :a, item, new_attrs
             end
           end
@@ -86,10 +90,10 @@ module CustomTagHelpers
   end
 
   def ics_schedule_for(items, options, &block)
-    schedule_start  = Time.utc 2012, options[:month], options[:day], options[:start], 0, 0
+    schedule_start  = Time.utc 2013, options[:month], options[:day], options[:start], 0, 0
 
     first_start_h, first_start_min = items.first.start.to_s.split('.')
-    first_start_time = Time.utc 2012, options[:month], options[:day], first_start_h, first_start_min, 0
+    first_start_time = Time.utc 2013, options[:month], options[:day], first_start_h, first_start_min, 0
 
     items.each_with_index do |item, index|
       start              = item.start
@@ -101,18 +105,18 @@ module CustomTagHelpers
       start_min          = start_min.ljust(2, '0')
       stop_min           = stop_min.ljust(2, '0')
 
-      start_time         = Time.utc 2012, options[:month], options[:day], start_h, start_min, 0
-      stop_time          = Time.utc 2012, options[:month], options[:day], stop_h, stop_min, 0
+      start_time         = Time.utc 2013, options[:month], options[:day], start_h, start_min, 0
+      stop_time          = Time.utc 2013, options[:month], options[:day], stop_h, stop_min, 0
 
       yield item, start_time, stop_time
     end
   end
 
   def schedule_for(items, options, &block)
-    schedule_start  = Time.utc 2012, 1, 1, options[:start], 0, 0
+    schedule_start  = Time.utc 2013, 1, 1, options[:start], 0, 0
 
     first_start_h, first_start_min = items.first.start.to_s.split('.')
-    first_start_time = Time.utc 2012, 1, 1, first_start_h, first_start_min, 0
+    first_start_time = Time.utc 2013, 1, 1, first_start_h, first_start_min, 0
 
     items.each_with_index do |item, index|
       start              = item.start
@@ -124,8 +128,8 @@ module CustomTagHelpers
       start_min          = start_min.ljust(2, '0')
       stop_min           = stop_min.ljust(2, '0')
 
-      start_time         = Time.utc 2012, 1, 1, start_h, start_min, 0
-      stop_time          = Time.utc 2012, 1, 1, stop_h, stop_min, 0
+      start_time         = Time.utc 2013, 1, 1, start_h, start_min, 0
+      stop_time          = Time.utc 2013, 1, 1, stop_h, stop_min, 0
 
       duration_min       = (stop_time - start_time) / 60
 

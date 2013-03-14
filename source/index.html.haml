@@ -2,97 +2,12 @@
 body_class: index
 ---
 
-%article
-  %header
-    %h2
-      european ruby camp
-      %span= "|"
-      %br
-      summer edition
-    %h3
-      17 - 19 August 2012, Berlin
-
-  = wrapped :section, :class => 'highlights' do
-    %ul
-      %li.venue
-        %span
-          On Berlin's Largest Lake,
-          %br
-          Müggelsee.
-      %li.content
-        %span
-          Community-organised,
-          %br
-          not-for-profit.
-      %li.spare-time
-        %span
-          Sessions. Hacking.
-          %br
-          Siesta breaks and Grill.
-
-  = wrapped :section, :class => 'register' do
-    = link_to 'http://eurucamp2012.eventbrite.com', :title => 'Get your ticket', :class => 'primary' do
-      %strong
-        Join Us
-        %span<> !
-    %p
-      %small
-        = succeed '.' do
-          Last Minute and Beginners' workshop tickets
-          %br/
-          = link_to 'available from 5pm Friday 3.8', '/2012/07/30/main-ticket-sale-ended', :title   => 'More information on our blog'
-
-  %section.sponsors
-    = wrapped :header do
-      %h3 Our sponsors
-    = partial 'partials/sponsors', :locals => { :sponsors => data.sponsors }
-
-  .block
-    %section.speakers
-      :javascript
-        var SPEAKER_VIDEO_IDS      = #{data.speakers.map { |s| s.videos }.compact.map { |v| v.values }.flatten};
-        var SPEAKER_VIDEO_TEMPLATE = "#{vimeo('[VIDEO_ID]').gsub(/\n/, '')}";
-      = wrapped :header do
-        %h3 Our speakers
-      = wrapped do
-        %ul
-          - data.speakers.each do |speaker|
-            %li
-              %a(href="/speakers.html##{speaker.name.parameterize}")
-                %img(src="/images/content/speakers/#{speaker.image}" alt="Portrait: #{speaker.name}")
-                %span
-                  %strong= speaker.name
-                  = speaker.company
-
-
-    %section.twitter-feed
-      = wrapped :header do
-        %h3 Lately on Twitter
-      = wrapped do
-        .tweets
-          .loading
-            Loading tweets, sit tight &hellip;
-          %noscript
-            Sorry! We have been lazy and are using Javascript to fetch the latest tweets.
-            %br
-            Head over to
-            %a(href="https://twitter.com/eurcuamp/" title="@eurucamp") @eurucamp on Twitter
-            instead?
-
-    %section.attendees
-      = wrapped :header do
-        %h3 Attending
-      = wrapped do
-        %ul
-          - data.attendees.each do |id|
-            %li
-              %a(href="https://twitter.com/#{id}" title="View #{id} on Twitter")
-                %img(src="https://api.twitter.com/1/users/profile_image/#{id}" alt="Avatar for #{id}")
-        %p.more
-          If you are attending
-          %a(href="http://lanyrd.com/2012/eurucamp" title="eurucamp on lanyard.com") Let us know on Lanyrd
-
-  %section.partners.sponsors
-    = wrapped :header do
-      %h3 Our partners
-    = partial 'partials/partners', :locals => { :partners => data.partners }
+%div.row
+  %div.three.columns
+    %section#one
+      %h2
+        One
+  %div.three.columns
+    %section#tewo
+      %h2
+        Two

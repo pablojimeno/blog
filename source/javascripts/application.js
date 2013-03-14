@@ -1,9 +1,8 @@
 //= require "lib/underscore"
-//= require "lib/jquery-1.7.2.min"
+//= require "lib/jquery-1.9.1.min.js"
 //= require "lib/jquery.timeago"
+//= require "lib/maps.js"
 //= require "lib/jquery.responsive_images"
-//= require "lib/jquery.backstretch"
-//= require "lib/jquery.cookie"
-//= require "lib/jquery.hashchange"
 //= require "lib/twitter_feed"
 //= require "initializer"
+

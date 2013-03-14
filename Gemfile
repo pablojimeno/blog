@@ -1,18 +1,18 @@
-source :rubygems
+source 'https://rubygems.org'
 
 gem 'rake',              '~> 0.9.2'
-gem 'sass',              :git => 'https://github.com/nex3/sass.git',
-                         :ref => '8a93d8c65baabeb6f3251d560095ff83b52308bf'
+gem 'sass',              '~> 3.2.5'
 
-gem 'middleman',         '~> 3.0.0'
-gem 'middleman-blog',    '~> 3.0.0'
+gem 'middleman',         '~> 3.0.9'
+gem 'middleman-blog',    '~> 3.1.1'
 gem 'builder'
 gem 'sitemap_generator'
 gem 'coffee-script'
-gem 'bourbon'
 gem 'nokogiri'
 gem 'redcarpet'
 gem 'pygments.rb'
+gem "middleman-livereload"
+gem 'zurb-foundation'
 
 gem 'html5-boilerplate', :require => 'html5-boilerplate',
                          :git     => 'git://github.com/edenspiekermann/compass-html5-boilerplate.git',

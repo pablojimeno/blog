@@ -1,0 +1,471 @@
+// CONVENIENCE STYLE DEFINITIONS
+.unstyled-list {
+    list-style: none;
+}
+
+.horizontal-list {
+    list-style: none;
+    float: left;
+}
+
+.no-margins-and-paddings {
+    padding: 0;
+    margin: 0;
+}
+
+.shadow {
+    -webkit-box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 1);
+    box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 1); 
+}
+
+.hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-layer-defaults {
+    border-top: 3px solid $brand-3;
+    padding-bottom: 20px;
+}
+
+.layer-grayscale .map-tile-loaded {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.0511 0.0511 0.0511 0 0 0.0511 0.0511 0.0511 0 0 0.0511 0.0511 0.0511 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    filter:  grayscale(100%) brightness(50%) contrast(50%) invert(100%);
+    -webkit-filter: grayscale(100%) brightness(0.2) contrast(60%);
+}
+
+.center-text {
+    text-align: center;
+}
+
+// CONTENT 2013 STYLES
+html {
+    height: 100%;
+}
+
+body {
+    background: $black url('../images/background_tile.jpg');
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    color: $white;
+    &.dark {
+        color: $light-grey;
+    }
+}
+
+// definitions are still missing
+h2 {
+    margin-top: 40px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+a {
+    color: $red;
+
+    &:hover {
+        color: $blue;
+    }
+}
+
+.button {
+    display: inline-block;
+    color: $white;
+    font-family: 'sonarmedium';
+    font-size: 18px;
+    text-align: center;
+    padding: 5px 10px 7px;
+    text-transform: uppercase;
+    float: right;
+
+    &.blue {
+        background-color: $blue;
+    }
+
+    &.red {
+        background-color: $red;
+    }
+
+    &:hover {
+        color: $white;
+    }
+
+    &.twitter-btn {
+        float: none;
+        width: 90%;
+    }
+}
+
+.main {
+    overflow: hidden;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 430px auto -100px;
+}
+
+// HEADER
+.header {
+    position: relative;
+    top: -50px;
+    height: 50px;
+    z-index: 200;
+    background-color: $translucent-black;
+
+    h1 {
+        @extend .no-margins-and-paddings;
+        width: 200px;
+    }
+}
+
+body.index .header {
+    z-index: 0;
+}
+
+// FOOTER STYLES
+.footer, .push {
+    height: 80px;
+}
+
+.footer {
+    $image_base: '../images/layout/footer'; 
+    width: 100%;
+    margin-top: 100px;
+    background-color: $translucent-black;
+
+    ul.links {
+        padding: 0;
+        margin: 1em auto;
+        width: 192px;
+
+        li {
+            display: inline-block;
+            margin: 1em 0.5em 0 0;
+
+            &:last-child {
+                margin: 0;
+            }
+
+            a {
+                display: block;
+                @extend .hide-text;
+                width: 40px;
+                height: 40px;
+                opacity: 0.75;
+
+                &:hover {
+                    opacity: 1;
+                    // transition(opacity, 0.5s);
+                }
+            }
+
+            &.twitter {
+                a {
+                   background-image: url("#{$image_base}/twitter_icon.png") 
+                }         
+            }
+            &.lanyrd {
+                a {
+                   background-image: url("#{$image_base}/lanyrd_icon.png") 
+                }         
+            }
+            &.facebook {
+                a {
+                   background-image: url("#{$image_base}/facebook_icon.png") 
+                }         
+            }
+            &.google-plus {
+                a {
+                   background-image: url("#{$image_base}/google_plus_icon.png") 
+                }         
+            }
+        }        
+    }
+}
+
+
+
+// EVENT NAVIGATION
+.event-navigation-wrapper {
+    @extend .shadow;
+    position: fixed;
+    left: 0px;
+    top: 100px;
+    height: 247px;
+    height: 250px;
+    width: 60px;
+    margin-left: -10px;
+    background-color: $light-grey;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; 
+}
+
+.event-navigation {
+    margin-top: 4px;
+    margin-left: 10px;  
+    
+    li a {
+        @extend .hide-text;
+        display: block;
+        width: 46px;
+        height: 52px;
+        background-image: url('../images/sticky_calendar_all.png');
+        background-repeat: no-repeat;
+        margin-bottom: 9px;
+        color: $white;
+
+        &.thursday {
+            background-position: 0 0;
+        }
+        &.friday {
+            background-position: 0 -63px;
+        }
+        &.saturday {
+            background-position: 0 -125px;
+        }
+        &.sunday {
+            background-position: 0 -186px;
+        }
+    }   
+}
+
+// PRIMARY NAVIGATION
+.primary-navigation {
+    float: right;
+    overflow: hidden;
+    height: 50px;
+    margin: -35px 0 0 0;
+    z-index: 100;
+    
+    li {
+        @extend .horizontal-list;
+        color: $white;
+        padding-right: 15px;
+
+        a {
+            text-transform: uppercase;
+            color: $grey;
+            &:hover{
+                color: $blue;
+            }
+        }
+    }
+}
+
+// MAP STYLES
+.map {
+    position: absolute;
+    top: 50px;
+    margin-top: 0px;
+    width: 100%;
+    min-height: 430px;
+    border-bottom: 1px solid $grey;
+    border-top: 1px solid $grey;
+    overflow: visible;
+}
+
+.index .map {
+    top: 0px;
+    min-height: 480px;
+}
+
+
+// .marker-tooltip {
+//     transform: translate(716.923px, 249.919px);
+// }
+
+.marker-popup {
+    width: 250px;
+    padding: 10px;
+    img {
+        float: left;
+        padding-right: 15px;  
+    }
+
+    h2 {
+        font-size: $baseFontSize + 2;
+        color: $black;
+    }
+}
+
+$marker-width: 89px;
+$marker-height: 106px;
+$marker-margin-left: -45px;
+$marker-margin-top: -53px;
+$logo-marker-left: 268px;
+$logo-marker-top: 210px;
+
+.marker-image {
+    width: $marker-width / 2;
+    height: $marker-height /2;
+    margin-left: $marker-margin-left / 2;
+    margin-top: $marker-margin-top / 2; 
+    //pointer-events: all;
+    position: absolute;
+
+    &.logo {
+        width: 537px;
+        height: 421px;
+        margin-left: -$logo-marker-left;
+        margin-top: -$logo-marker-top;
+        pointer-events: none;
+    }
+}
+
+// CONTENT STYLES
+
+$default_padding: 15px 15px 5px 15px;
+
+.contend-layer {
+    @extend .content-layer-defaults;
+    background-color: $white;
+    color: $light-grey;
+    min-height: 474px;
+
+    &.venue {
+        p {
+            padding: $default_padding;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        address {
+            font-style: normal;
+            line-height: 1.2;
+            padding: 0px 15px;
+        }
+
+        img {
+            @extend .centered-image;
+        }
+    }
+
+    .tweets ul li {
+        width: 100%;
+        border-bottom: 1px solid $blue;
+        padding: 5px 15px;
+        line-height: 1.2;
+    }
+}
+
+.contend-layer-opaque {
+    @extend .content-layer-defaults;
+    background-color: transparent;
+    min-height: 180px;
+
+    &.cfp {
+        color: $blue;
+        padding: $default_padding;
+        p {
+            font-size: 18px;    
+        }
+
+        em {
+            padding: 0 4px;
+            font-style: normal;
+            background-color: $blue;
+            color: $black;
+        }
+    }
+
+    &.flickr {
+        padding: $default_padding;
+        img {
+            @extend .centered-image;
+        }
+    }
+}
+
+.content-layer-footer {
+    width: 100%;
+    border-bottom: 1px solid $blue;
+    height: 45px;
+
+    h3 {
+        margin-top: 0px;
+    }
+
+    &.with-background {
+        height: 80px;
+        border: none;
+        @extend .shadow;
+        background-color: $white;
+
+        p {
+            line-height: 18px;
+        }
+    }
+}
+
+.speaker-box {
+    @extend .contend-layer;
+    width: 100%;
+    height: 380px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: $black;
+
+    p {
+        height: 108px;
+    }
+
+    .twitter {
+        background-color: $blue;
+        color: $white;
+        line-height: 21px;
+        padding: 2px 4px;
+    }
+}
+
+// mediaqueries 
+
+@media only screen and (max-width: 780px) {
+    .zoomer {
+        top: 60px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .map {
+        display: none;
+    }
+
+    .header {
+        top: 0px;
+    }
+
+    .primary-navigation {
+        display: none;
+    }
+
+    .main {
+        margin-top: 50px;
+    }
+
+    .contend-layer {
+        min-height: 300px;
+    }
+
+    .contend-layer-opaque {
+        &.cfp {
+            min-height: 325px;
+        }
+
+        &.flickr {
+            min-height: 180px;
+        }
+    }
+}
+

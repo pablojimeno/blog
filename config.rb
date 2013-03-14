@@ -1,6 +1,7 @@
 require "lib/custom_tag_helpers"
 helpers CustomTagHelpers
-
+require "zurb-foundation"
+preferred_syntax = :scss
 require 'active_support/core_ext/string'
 require 'app/helpers/html5_boilerplate_helper'
 require 'icalendar'

@@ -2,28 +2,25 @@
 
 class TwitterFeed
 
-  apiURL     = 'http://api.twitter.com/1'
+  apiURL     = 'https://api.twitter.com/1'
   tweetsTmpl = """
-    <ul>
+    <ul class="unstyled-list">
       <% _.each(tweets, function(tweet) { %>
         <li>
           <span><%= tweet.text %></span>
           <a href="<%= 'https://twitter.com/' + user + '/status/' + tweet.id_str %>" title="View on Twitter">
-            &mdash;<%= $.timeago(tweet.created_at) %>
+            &mdash;<%= $.timeago(Date.parse(tweet.created_at)) %>
           </a>
         </li>
       <% }); %>
     </ul>
-    <p class="more">
-      <a href="https://twitter.com/<%= user %>" title="View on twitter">More tweets on Twitter</a>
-    </p>
   """
   errorTmpl  = '<p class="failed">Tweets could not be loaded.</p>'
 
   constructor: (user, el) ->
     @user  = user
     @$el   = $(el)
-    @count = 5
+    @count = 4
     @fetch()
 
   fetch: ->

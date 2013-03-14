@@ -2,7 +2,7 @@
 eurucamp Website README
 =======================
 
-In this repository you'll find the website for eurucamp 2012.
+In this repository you'll find the website for eurucamp 2013.
 
 Install
 -------
@@ -57,5 +57,5 @@ Deployment
 
 ### Production
 
-* <http://2012.eurucamp.org/>
+* <http://2013.eurucamp.org/>
 * `bundle exec rake production deploy`
