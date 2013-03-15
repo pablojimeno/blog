@@ -1,8 +1,7 @@
+eurucamp Blog README
+====================
 
-eurucamp Website README
-=======================
-
-In this repository you'll find the website for eurucamp 2013.
+In this repository you'll find the website for the eurucamp blog.
 
 Install
 -------
@@ -57,5 +56,5 @@ Deployment
 
 ### Production
 
-* <http://2013.eurucamp.org/>
+* <http://blog.eurucamp.org/>
 * `bundle exec rake production deploy`
