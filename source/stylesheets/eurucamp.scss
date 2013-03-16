@@ -13,9 +13,8 @@
     margin: 0;
 }
 
-.shadow {
-    -webkit-box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 1);
-    box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 1); 
+.default-content-paddings {
+    padding: 15px 20px;
 }
 
 .hide-text {
@@ -31,7 +30,8 @@
 }
 
 .content-layer-defaults {
-    border-top: 3px solid $brand-3;
+    border-top: 3px solid $blue;
+    border-bottom: 1px solid $blue;
     padding-bottom: 20px;
 }
 
@@ -73,65 +73,24 @@ h3 {
 }
 
 a {
-    color: $red;
+    color: $grey;
 
     &:hover {
         color: $blue;
     }
 }
 
-.button {
-    display: inline-block;
-    color: $white;
-    font-family: 'sonarmedium';
-    font-size: 18px;
-    text-align: center;
-    padding: 5px 10px 7px;
-    text-transform: uppercase;
-    float: right;
+// HEADER STYLES
 
-    &.blue {
-        background-color: $blue;
-    }
-
-    &.red {
-        background-color: $red;
-    }
-
-    &:hover {
-        color: $white;
-    }
-
-    &.twitter-btn {
-        float: none;
-        width: 90%;
-    }
+.header {
+    top: 0px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid $white;
+    padding-top: 15px;
 }
 
 .main {
-    overflow: hidden;
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 430px auto -100px;
-}
-
-// HEADER
-.header {
-    position: relative;
-    top: -50px;
-    height: 50px;
-    z-index: 200;
-    background-color: $translucent-black;
-
-    h1 {
-        @extend .no-margins-and-paddings;
-        width: 200px;
-    }
-}
-
-body.index .header {
-    z-index: 0;
+    // background: transparent url(../images/logo_2.png) no-repeat 10px 0;
 }
 
 // FOOTER STYLES
@@ -148,7 +107,7 @@ body.index .header {
     ul.links {
         padding: 0;
         margin: 1em auto;
-        width: 192px;
+        width: 199px;
 
         li {
             display: inline-block;
@@ -195,172 +154,57 @@ body.index .header {
     }
 }
 
-
-
-// EVENT NAVIGATION
-.event-navigation-wrapper {
-    @extend .shadow;
-    position: fixed;
-    left: 0px;
-    top: 100px;
-    height: 247px;
-    height: 250px;
-    width: 60px;
-    margin-left: -10px;
-    background-color: $light-grey;
-    -webkit-border-radius: 10px;
-    border-radius: 10px; 
-}
-
-.event-navigation {
-    margin-top: 4px;
-    margin-left: 10px;  
-    
-    li a {
-        @extend .hide-text;
-        display: block;
-        width: 46px;
-        height: 52px;
-        background-image: url('../images/sticky_calendar_all.png');
-        background-repeat: no-repeat;
-        margin-bottom: 9px;
-        color: $white;
-
-        &.thursday {
-            background-position: 0 0;
-        }
-        &.friday {
-            background-position: 0 -63px;
-        }
-        &.saturday {
-            background-position: 0 -125px;
-        }
-        &.sunday {
-            background-position: 0 -186px;
-        }
-    }   
-}
-
-// PRIMARY NAVIGATION
-.primary-navigation {
-    float: right;
-    overflow: hidden;
-    height: 50px;
-    margin: -35px 0 0 0;
-    z-index: 100;
-    
-    li {
-        @extend .horizontal-list;
-        color: $white;
-        padding-right: 15px;
-
-        a {
-            text-transform: uppercase;
-            color: $grey;
-            &:hover{
-                color: $blue;
-            }
-        }
-    }
-}
-
-// MAP STYLES
-.map {
-    position: absolute;
-    top: 50px;
-    margin-top: 0px;
-    width: 100%;
-    min-height: 430px;
-    border-bottom: 1px solid $grey;
-    border-top: 1px solid $grey;
-    overflow: visible;
-}
-
-.index .map {
-    top: 0px;
-    min-height: 480px;
-}
-
-
-// .marker-tooltip {
-//     transform: translate(716.923px, 249.919px);
-// }
-
-.marker-popup {
-    width: 250px;
-    padding: 10px;
-    img {
-        float: left;
-        padding-right: 15px;  
-    }
-
-    h2 {
-        font-size: $baseFontSize + 2;
-        color: $black;
-    }
-}
-
-$marker-width: 89px;
-$marker-height: 106px;
-$marker-margin-left: -45px;
-$marker-margin-top: -53px;
-$logo-marker-left: 268px;
-$logo-marker-top: 210px;
-
-.marker-image {
-    width: $marker-width / 2;
-    height: $marker-height /2;
-    margin-left: $marker-margin-left / 2;
-    margin-top: $marker-margin-top / 2; 
-    //pointer-events: all;
-    position: absolute;
-
-    &.logo {
-        width: 537px;
-        height: 421px;
-        margin-left: -$logo-marker-left;
-        margin-top: -$logo-marker-top;
-        pointer-events: none;
-    }
-}
-
 // CONTENT STYLES
+
+.blog {
+    ul {
+        @extend .unstyled-list;
+    }
+}
+
+.tags {
+    @extend .horizontal-list;
+    color: $blue;
+    text-transform: uppercase;
+    font-size: 10pt;
+    letter-spacing: 1pt;
+}
+
+.meta {
+    color: $blue;
+    width: 71px;
+    display: block;
+    margin-left: -100px;
+    margin-top: -11px;
+    float: left;
+
+    &.detail {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .year {
+        display: block;
+        font-size: 24pt;
+        border-bottom: 2px solid $blue;
+    }
+
+    .day {
+        display: block;
+        font-size: 48pt;
+    }
+}
 
 $default_padding: 15px 15px 5px 15px;
 
-.contend-layer {
+.content-layer {
     @extend .content-layer-defaults;
     background-color: $white;
     color: $light-grey;
-    min-height: 474px;
-
-    &.venue {
-        p {
-            padding: $default_padding;
-            margin: 0;
-            line-height: 1.2;
-        }
-
-        address {
-            font-style: normal;
-            line-height: 1.2;
-            padding: 0px 15px;
-        }
-
-        img {
-            @extend .centered-image;
-        }
-    }
-
-    .tweets ul li {
-        width: 100%;
-        border-bottom: 1px solid $blue;
-        padding: 5px 15px;
-        line-height: 1.2;
-    }
+    margin-bottom: 20px;
 }
 
-.contend-layer-opaque {
+.content-layer-opaque {
     @extend .content-layer-defaults;
     background-color: transparent;
     min-height: 180px;
@@ -432,39 +276,26 @@ $default_padding: 15px 15px 5px 15px;
 // mediaqueries 
 
 @media only screen and (max-width: 780px) {
-    .zoomer {
-        top: 60px;
-    }
 }
 
 @media only screen and (max-width: 480px) {
-    .map {
-        display: none;
-    }
+    .meta {
+        display: inline;
+        float: none;
+        margin-left: 0px;
+        .year {
+            display: inline;
+            font-size: 12pt;
+            border: none;
 
-    .header {
-        top: 0px;
-    }
-
-    .primary-navigation {
-        display: none;
-    }
-
-    .main {
-        margin-top: 50px;
-    }
-
-    .contend-layer {
-        min-height: 300px;
-    }
-
-    .contend-layer-opaque {
-        &.cfp {
-            min-height: 325px;
+            &:after { 
+                content: ' /';
+            }
         }
 
-        &.flickr {
-            min-height: 180px;
+        .day {
+            display: inline;
+            font-size: 12pt;
         }
     }
 }

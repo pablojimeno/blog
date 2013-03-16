@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rake',              '~> 0.9.2'
 gem 'sass',              '~> 3.2.5'
+gem 'zurb-foundation',   '~> 4.0.5', require: false
+gem 'rb-inotify', '~> 0.9'
 
 gem 'middleman',         '~> 3.0.9'
 gem 'middleman-blog',    '~> 3.1.1'
@@ -12,7 +14,6 @@ gem 'nokogiri'
 gem 'redcarpet'
 gem 'pygments.rb'
 gem "middleman-livereload"
-gem 'zurb-foundation'
 
 gem 'html5-boilerplate', :require => 'html5-boilerplate',
                          :git     => 'git://github.com/edenspiekermann/compass-html5-boilerplate.git',

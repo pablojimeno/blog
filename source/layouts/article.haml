@@ -1,21 +1,19 @@
 - wrap_layout :layout do
-  = wrapped :div, :class => 'page-head' do
-    %h2 Blog
 
-  %article
-    = wrapped :header do
-      %h3= current_article.title
-
-    = wrapped :aside, :class => 'meta' do
-      %small
-        %span.date= current_article.date.strftime('%e %b %Y')
-        %span.author= "by #{current_article.data.author}"
+  %div.row
+    %div.columns.hide-for-small.large-2
+      %div.meta.detail
+        %span.year= current_article.date.strftime('%Y')
+        %span.day= current_article.date.strftime('%d')
       %ul.tags
         - current_article.tags.each do |tag|
           %li= tag
-
-    = wrapped :section, :class => 'body' do
-      = yield
+    %div.columns.small-12.large-9
+      %div.content-layer.default-content-paddings
+        %article
+          %h3= current_article.title
+          %section.section
+            = yield
 
     = wrapped :footer do
       %nav
