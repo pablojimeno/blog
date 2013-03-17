@@ -99,7 +99,7 @@ a {
 }
 
 .footer {
-    $image_base: '../images/layout/footer'; 
+    $image_base: '../images/layout/footer';
     width: 100%;
     margin-top: 100px;
     background-color: $translucent-black;
@@ -132,25 +132,25 @@ a {
 
             &.twitter {
                 a {
-                   background-image: url("#{$image_base}/twitter_icon.png") 
-                }         
+                   background-image: url("#{$image_base}/twitter_icon.png")
+                }
             }
             &.lanyrd {
                 a {
-                   background-image: url("#{$image_base}/lanyrd_icon.png") 
-                }         
+                   background-image: url("#{$image_base}/lanyrd_icon.png")
+                }
             }
             &.facebook {
                 a {
-                   background-image: url("#{$image_base}/facebook_icon.png") 
-                }         
+                   background-image: url("#{$image_base}/facebook_icon.png")
+                }
             }
             &.google-plus {
                 a {
-                   background-image: url("#{$image_base}/google_plus_icon.png") 
-                }         
+                   background-image: url("#{$image_base}/google_plus_icon.png")
+                }
             }
-        }        
+        }
     }
 }
 
@@ -213,7 +213,7 @@ $default_padding: 15px 15px 5px 15px;
         color: $blue;
         padding: $default_padding;
         p {
-            font-size: 18px;    
+            font-size: 18px;
         }
 
         em {
@@ -273,7 +273,7 @@ $default_padding: 15px 15px 5px 15px;
     }
 }
 
-// mediaqueries 
+// mediaqueries
 
 @media only screen and (max-width: 780px) {
 }
@@ -288,7 +288,7 @@ $default_padding: 15px 15px 5px 15px;
             font-size: 12pt;
             border: none;
 
-            &:after { 
+            &:after {
                 content: ' /';
             }
         }
@@ -299,4 +299,3 @@ $default_padding: 15px 15px 5px 15px;
         }
     }
 }
-

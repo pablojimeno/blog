@@ -5,4 +5,3 @@
 //= require "lib/jquery.responsive_images"
 //= require "lib/twitter_feed"
 //= require "initializer"
-
