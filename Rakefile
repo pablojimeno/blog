@@ -1,20 +1,21 @@
 require 'bundler/setup'
-# require 'heroku_san'
-# 
-# module HerokuSan::Deploy
-#   class Eurucamp < Sinatra
-#     def deploy
-#       super
-#       #@stage.rake('utils:update_sitemap')
-#       #@stage.rake('utils:update_attendees')
-#     end
-#   end
-# end
-# 
-# config_file = File.join(File.expand_path(File.dirname(__FILE__)), 'config', 'heroku.yml')
-# HerokuSan.project = HerokuSan::Project.new(config_file, :deploy => HerokuSan::Deploy::Eurucamp)
-# 
-# load 'heroku_san/tasks.rb'
+require 'psych'
+require 'yaml'
+require 'heroku_san'
+
+module HerokuSan::Deploy
+ class EurucampBlog < Sinatra
+   def deploy
+     super
+     #@stage.rake('utils:update_sitemap')
+   end
+ end
+end
+
+config_file = File.join(File.expand_path(File.dirname(__FILE__)), 'config', 'heroku.yml')
+HerokuSan.project = HerokuSan::Project.new(config_file, :deploy => HerokuSan::Deploy::EurucampBlog)
+
+load 'heroku_san/tasks.rb'
 
 require 'nokogiri'
 require 'open-uri'
