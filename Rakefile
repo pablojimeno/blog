@@ -24,7 +24,7 @@ require 'sitemap_generator'
 namespace :utils do
   desc "Update sitemap"
   task :update_sitemap do
-    SitemapGenerator::Sitemap.default_host = 'http://2013.eurucamp.org'
+    SitemapGenerator::Sitemap.default_host = 'http://blog.eurucamp.org'
     SitemapGenerator::Sitemap.public_path = "source"
     SitemapGenerator::Sitemap.create do
       add '/',           :changefreq => 'hourly'
