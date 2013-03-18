@@ -11,12 +11,15 @@ body_class: blog
           %div.content-layer.default-content-paddings
             .meta
               %span.year= article.date.strftime('%Y')
+              %span.month= article.date.strftime('%h')
               %span.day= article.date.strftime('%d')
             %h3= link_to article.title, article.url_without_extension
             %ul.tags
               - article.tags.each do |tag|
-                %li= tag
+                %li
+                  %span.round.alert.label
+                    = tag
             .block
               = article.summary
               %p.more
-                = link_to "Read on&hellip;", article.url_without_extension
+                = link_to "read on&hellip;", article.url_without_extension

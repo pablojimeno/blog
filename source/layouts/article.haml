@@ -4,10 +4,12 @@
     %div.columns.hide-for-small.large-2
       %div.meta.detail
         %span.year= current_article.date.strftime('%Y')
+        %span.month= current_article.date.strftime('%h')
         %span.day= current_article.date.strftime('%d')
       %ul.tags
         - current_article.tags.each do |tag|
-          %li= tag
+          %span.round.alert.label
+            %li= tag
     %div.columns.small-12.large-9
       %div.content-layer.default-content-paddings
         %article
