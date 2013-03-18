@@ -172,9 +172,9 @@ a {
 
 .meta {
     color: $blue;
-    width: 71px;
+    width: 101px;
     display: block;
-    margin-left: -100px;
+    margin-left: -130px;
     margin-top: -11px;
     float: left;
 
@@ -184,15 +184,45 @@ a {
     }
 
     .year {
+        background: $red;
+        color: $white;
         display: block;
-        font-size: 24pt;
-        border-bottom: 2px solid $blue;
+        font-size: 18pt;
+        //border-bottom: 2px solid $white;
+        text-align: center;
+        padding: 5px 0 5px 0
     }
 
+    .month {
+        padding-top: 5px;
+        background: $white;
+        color: $grey;
+        display: block;
+        font-size: 16pt;
+        text-align: center;
+        text-transform: uppercase
+    }
+
+
     .day {
+        background: $white;
         display: block;
         font-size: 48pt;
+        text-align: center;
+        color: $grey;
     }
+
+
+    .dayname {
+        padding-bottom: 5px;
+        background: $white;
+        display: block;
+        font-size: 16pt;
+        text-align: center;
+        color: $grey;
+        text-transform: uppercase
+    }
+
 }
 
 $default_padding: 15px 15px 5px 15px;
