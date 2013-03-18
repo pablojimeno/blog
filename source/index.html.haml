@@ -1,26 +1,31 @@
 ---
-title: Blog
+title: blog
 body_class: blog
 ---
 
 %article
   %section.section
     - blog.published_articles[0...20].each_with_index do |article, index|
-      %div.row
-        %div.columns.small-12.large-10.large-offset-2
-          %div.content-layer.default-content-paddings
-            .meta
-              %span.year= article.date.strftime('%Y')
-              %span.month= article.date.strftime('%h')
-              %span.day= article.date.strftime('%d')
-              %span.dayname= article.date.strftime('%a')
-            %h3= link_to article.title, article.url_without_extension
-            %ul.tags
-              - article.tags.each do |tag|
-                %li
-                  %span.round.alert.label
+      .row
+        .small-12.large-10.large-offset-2.columns.preview
+          .row
+            .large-2.large-offset-1.columns.hide-for-small.date
+              .years
+                %p= article.date.strftime('%Y')
+              .days
+                %p= article.date.strftime('%h')
+                %p
+                  %span= article.date.strftime('%d')
+                %p= article.date.strftime('%a')
+            .small-12.large-9.columns.title
+              %h1= link_to article.title, article.url_without_extension
+          .row
+            .large-2.large-offset-1.columns.hide-for-small.tags
+              %ul
+                - article.tags.each do |tag|
+                  %li
                     = tag
-            .block
+            .small-12.large-9.columns.summary
               = article.summary
-              %p.more
+              .more
                 = link_to "read on&hellip;", article.url_without_extension
