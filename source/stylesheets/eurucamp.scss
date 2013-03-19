@@ -56,7 +56,7 @@ body{
 }
 
 .title, .maintitle{
-  h1{
+  h1, h2{
     font-family: "sonarnormal";
     margin: 0;
     padding: 0;
@@ -170,330 +170,37 @@ body{
   }
 }
 
-// CONVENIENCE STYLE DEFINITIONS
-//.unstyled-list {
-//    list-style: none;
-//}
-//
-//.horizontal-list {
-//    list-style: none;
-//    float: left;
-//}
-//
-//.no-margins-and-paddings {
-//    padding: 0;
-//    margin: 0;
-//}
-//
-//.default-content-paddings {
-//    padding: 15px 20px;
-//}
-//
-//.hide-text {
-//    text-indent: 100%;
-//    white-space: nowrap;
-//    overflow: hidden;
-//}
-//
-//.centered-image {
-//    display: block;
-//    margin-left: auto;
-//    margin-right: auto;
-//}
-//
-//.content-layer-defaults {
-//    border-top: 3px solid $blue;
-//    border-bottom: 1px solid $blue;
-//    padding-bottom: 20px;
-//}
-//
-//.layer-grayscale .map-tile-loaded {
-//    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.0511 0.0511 0.0511 0 0 0.0511 0.0511 0.0511 0 0 0.0511 0.0511 0.0511 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
-//    filter:  grayscale(100%) brightness(50%) contrast(50%) invert(100%);
-//    -webkit-filter: grayscale(100%) brightness(0.2) contrast(60%);
-//}
-//
-//.center-text {
-//    text-align: center;
-//}
+.links{
+  margin-top: 1em;
+  line-height: 1.5em;
+  text-align: center;
+  a, a:active, a:visited{
+    color: $blue;
+    text-transform: uppercase;
+    span{
+      font-family: "sonarbold";      
+      text-transform: none;
+    }
+  }
+}
 
+.links:hover{
+  background: $blue;
+  a, a:active, a:visited{
+    color: $white;
+    cursor: pointer;
+  }
+}
 
+.tweets{
+  margin-top: 1em;
+  border-top: 3px solid $blue;
+  border-bottom: 1px solid $blue;
+}
 
-//h1, h2, h3, h4, h5, h6 {
-//    text-transform: uppercase;
-//    color: $white;
-//    &.dark {
-//        color: $light-grey;
-//    }
-//}
-
-// definitions are still missing
-//h2 {
-//    margin-top: 40px;
-//}
-//
-//h3 {
-//    font-size: 18px;
-//}
-//
-//a {
-//    color: $grey;
-//
-//    &:hover {
-//        color: $blue;
-//    }
-//}
-
-// HEADER STYLES
-
-//.header {
-//    top: 0px;
-//    margin-bottom: 30px;
-//    border-bottom: 3px solid $white;
-//    padding-top: 15px;
-//}
-
-//.main {
-    // background: transparent url(../images/logo_2.png) no-repeat 10px 0;
-//}
-
-// FOOTER STYLES
-//.footer, .push {
-//    height: 80px;
-//}
-//
-//.footer {
-//.right{
-//  $image_base: '../images/layout/footer';
-//  width: 100%;
-//  background-color: $translucent-black;
-//}
-//    margin-top: 100px;
-//
-//    ul.links {
-//        padding: 0;
-//        margin: 1em auto;
-//        width: 199px;
-//
-//        li {
-//            display: inline-block;
-//            margin: 1em 0.5em 0 0;
-//
-//            &:last-child {
-//                margin: 0;
-//            }
-//
-//            a {
-//                display: block;
-//                @extend .hide-text;
-//                width: 40px;
-//                height: 40px;
-//                opacity: 0.75;
-//
-//                &:hover {
-//                    opacity: 1;
-//                    // transition(opacity, 0.5s);
-//                }
-//            }
-//
-//.twitter {
-//  background-image: url("/images/twitter_icon.png");
-//}
-//.lanyrd {
-//  a {
-//     background-image: url("/images/lanyrd_icon.png");
-//  }
-//}
-//.facebook {
-//  a {
-//     background-image: url("/images/facebook_icon.png");
-//  }
-//}
-//.google-plus {
-//  a {
-//     background-image: url("/images/google_plus_icon.png");
-//  }
-//}
-//        }
-//    }
-//}
-
-// CONTENT STYLES
-
-//.blog {
-//    ul {
-//        @extend .unstyled-list;
-//    }
-//}
-//
-//.tags {
-//    @extend .horizontal-list;
-//    color: $blue;
-//    text-transform: uppercase;
-//    font-size: 10pt;
-//    letter-spacing: 1pt;
-//}
-
-
-
-
-//.meta {
-//    color: $blue;
-//    //width: 101px;
-//    //display: block;
-//    //margin-left: -130px;
-//    //margin-top: -11px;
-//    //float: left;
-//
-//    &.detail {
-//        margin-left: 0;
-//        margin-top: 0;
-//    }
-//
-//    .year {
-//        background: $red;
-//        color: $white;
-//        display: block;
-//        font-size: 18pt;
-//        //border-bottom: 2px solid $white;
-//        text-align: center;
-//        padding: 5px 0 5px 0
-//    }
-//
-//    .month {
-//        padding-top: 5px;
-//        background: $white;
-//        color: $grey;
-//        display: block;
-//        font-size: 16pt;
-//        text-align: center;
-//        text-transform: uppercase
-//    }
-//
-//
-//    .day {
-//        background: $white;
-//        display: block;
-//        font-size: 48pt;
-//        text-align: center;
-//        color: $grey;
-//    }
-//
-//
-//    .dayname {
-//        padding-bottom: 5px;
-//        background: $white;
-//        display: block;
-//        font-size: 16pt;
-//        text-align: center;
-//        color: $grey;
-//        text-transform: uppercase
-//    }
-//
-//}
-//
-//$default_padding: 15px 15px 5px 15px;
-//
-//.content-layer {
-//    @extend .content-layer-defaults;
-//    background-color: $white;
-//    color: $light-grey;
-//    margin-bottom: 20px;
-//}
-//
-//.content-layer-opaque {
-//    @extend .content-layer-defaults;
-//    background-color: transparent;
-//    min-height: 180px;
-//
-//    &.cfp {
-//        color: $blue;
-//        padding: $default_padding;
-//        p {
-//            font-size: 18px;
-//        }
-//
-//        em {
-//            padding: 0 4px;
-//            font-style: normal;
-//            background-color: $blue;
-//            color: $black;
-//        }
-//    }
-//
-//    &.flickr {
-//        padding: $default_padding;
-//        img {
-//            @extend .centered-image;
-//        }
-//    }
-//}
-//
-//.content-layer-footer {
-//    width: 100%;
-//    border-bottom: 1px solid $blue;
-//    height: 45px;
-//
-//    h3 {
-//        margin-top: 0px;
-//    }
-//
-//    &.with-background {
-//        height: 80px;
-//        border: none;
-//        @extend .shadow;
-//        background-color: $white;
-//
-//        p {
-//            line-height: 18px;
-//        }
-//    }
-//}
-//
-//.speaker-box {
-//    @extend .contend-layer;
-//    width: 100%;
-//    height: 380px;
-//    text-align: center;
-//    margin-bottom: 20px;
-//    color: $black;
-//
-//    p {
-//        height: 108px;
-//    }
-//
-//    .twitter {
-//        background-color: $blue;
-//        color: $white;
-//        line-height: 21px;
-//        padding: 2px 4px;
-//    }
-//}
-//
-//// mediaqueries
-//
-//@media only screen and (max-width: 780px) {
-//}
-//
-//@media only screen and (max-width: 480px) {
-//    .meta {
-//        display: inline;
-//        float: none;
-//        margin-left: 0px;
-//        .year {
-//            display: inline;
-//            font-size: 12pt;
-//            border: none;
-//
-//            &:after {
-//                content: ' /';
-//            }
-//        }
-//
-//        .day {
-//            display: inline;
-//            font-size: 12pt;
-//        }
-//    }
-//}
-//
+.tweet{
+  padding-top: 1em;
+  color: $blue;
+  font-size: .8em;
+  line-height: 1em;
+}

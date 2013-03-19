@@ -10,10 +10,17 @@ body_class: blog
         .small-12.large-2.columns
           .maintitle
             %h1 blog
-          .links
-            %p links of interest
-          .twitterfeed
-            %p twitterfeed
+          .links.hide-for-small
+            %a
+              %span
+                eurucamp
+              %br
+              main site
+          .tweets.hide-for-small
+            .title
+              %h2 tweets
+            .tweet
+              %p Congrats to last year main sponsor @scalarium... -19 days ago
         .small-12.large-10.columns
           .posts
             - blog.published_articles[0...20].each_with_index do |article, index|
