@@ -25,8 +25,9 @@ body_class: blog
                         %p= article.date.strftime('%Y')
                       .days
                         %p= article.date.strftime('%h')
-                        %p
-                          %span= article.date.strftime('%d')
+                        .number
+                          %p
+                            = article.date.strftime('%d')
                         %p= article.date.strftime('%a')
                   .small-12.large-9.columns.title
                     %h1= link_to article.title, article.url_without_extension

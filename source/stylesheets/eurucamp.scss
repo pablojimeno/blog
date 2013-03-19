@@ -17,40 +17,47 @@ body{
   p{
     margin: 0;
     padding: 0;
-    line-height: 1em;
+    line-height: .8em;
     font-size: .8em;
-  }
-  span{
-    font-size: 3em;
-    line-height: 1em;
   }
 }
 
+.number{
+  p{
+    font-size: 2em;
+    line-height: 1em;
+    font-family: "sonarbold";
+    margin-top: -0.3em;
+    margin-bottom: 0;
+  }
+}
+
+
 .years{
+  font-family: "sonarbold";
   background: $red;
   color: $white;
-  font-size: 18pt;
+  font-size: 1em;
   text-align: center;
-  padding: .1em 0 .1em 0;
+  padding: .5em 0 .5em 0;
 }
 
 .days{
-  padding-top: .2em 0 .2em 0; 
+  padding: .2em 0 .2em 0; 
   background: $white;
   color: $grey;
   display: block;
-  font-size: 16pt;
+  font-size: 1.5em;
   text-align: center;
   text-transform: uppercase;
   p{
-    line-height: .9em;
     padding: .1em 0 .1em 0;
   }
 }
 
 .title, .maintitle{
   h1{
-    font-family: "sonarbold";
+    font-family: "sonarnormal";
     margin: 0;
     padding: 0;
     line-height: 1.1em;
@@ -64,6 +71,11 @@ body{
 
 .main{
   padding-top: 5em;
+}
+
+.maintitle{
+  padding-bottom: .5em;
+  border-bottom: 3px solid $blue;
 }
 
 .posts{
@@ -87,6 +99,7 @@ body{
 }
 
 .text{
+  font-family: "sonarnormal";
   padding-bottom: 1em;
   background: $white;
   border-top: 3px solid $blue;
@@ -101,7 +114,7 @@ body{
   }
   a, a:active, a:visited{
     font-family: "sonarbold";
-    color: $blue;
+    color: $red;
   }
   a:hover{
     background: $blue;
@@ -117,9 +130,11 @@ body{
 .more{
   text-align: right;
   padding-top: 1em;
+  text-transform: uppercase;
   a, a:active, a:visited{
+    font-family: "sonarnormal";
     background: $red;
-    padding: .1em 1em .1em 1em;
+    padding: .2em 1em .2em 1em;
     color: $white;
   }
   a:hover{
@@ -127,6 +142,25 @@ body{
     color: $white;
   }
   margin-bottom: 1em;
+}
+
+.name{
+  h1{
+    a{
+      font-size: 2em;
+      font-family: "sonarbold";
+      span{
+        font-size: 0.85em;
+        font-family: "sonarnormal";
+      }
+    }
+  }
+}
+
+.top-bar{
+  img{
+    margin-top: 1em;
+  }
 }
 
 // CONVENIENCE STYLE DEFINITIONS

@@ -42,12 +42,15 @@
 
   %body(class="#{current_page.data.body_class}")
 
-    .fixed
+    .fixed.contain-to-grid
       %nav.top-bar
         %ul.title-area
           %li.name
             %h1
-              %a{:href => "/"} eurucamp 2013
+              %a{:href => "/"}
+                eurucamp
+                %span
+                  2013
           %li.toggle-topbar.menu-icon
             %a{:href => "#"}
               %span
@@ -56,15 +59,12 @@
             %li
               %a(href="https://twitter.com/eurucamp")
                 %img{:src=>"/images/twitter_icon.png"}
-            %li.divider
             %li
               %a(href="http://lanyrd.com/2013/eurucamp")
                 %img{:src=>"/images/lanyrd_icon.png"}
-            %li.divider
             %li
               %a(href="https://www.facebook.com/eurucamp")
                 %img{:src=>"/images/facebook_icon.png"}  
-            %li.divider
             %li
               %a(href="https://plus.google.com/114984140580239329274")
                 %img{:src=>"/images/google_plus_icon.png"}  
@@ -77,5 +77,28 @@
     / = partial 'partials/footer'
     //%div.push
     //= partial 'partials/footer'
-  //#map(class="map #{current_page.data.body_class}")
-  // = partial 'partials/event_navigation'
+    //#map(class="map #{current_page.data.body_class}")
+    // = partial 'partials/event_navigation'
+
+    :javascript
+      document.write('<script src=' +
+      ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
+      '.js><\/script>')
+
+    = javascript_include_tag 'foundation/foundation'
+    -#javascript_include_tag 'foundation/foundation.alerts'
+    -#javascript_include_tag 'foundation/foundation.clearing'
+    -#javascript_include_tag 'foundation/foundation.cookie'
+    -#javascript_include_tag 'foundation/foundation.dropdown'
+    -#javascript_include_tag 'foundation/foundation.forms'
+    -#javascript_include_tag 'foundation/foundation.joyride'
+    -#javascript_include_tag 'foundation/foundation.magellan'
+    -#javascript_include_tag 'foundation/foundation.orbit'
+    -#javascript_include_tag 'foundation/foundation.placeholder'
+    -#javascript_include_tag 'foundation/foundation.reveal'
+    -#javascript_include_tag 'foundation/foundation.section'
+    -#javascript_include_tag 'foundation/foundation.tooltips'
+    = javascript_include_tag 'foundation/foundation.topbar'
+
+    <script>$(document).foundation();</script>
+
