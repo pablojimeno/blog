@@ -79,10 +79,18 @@ body{
 }
 
 .text{
+  padding-bottom: 1em;
   background: $white;
   border-top: 3px solid $blue;
   border-bottom: 3px solid $blue;
-  color: $grey;
+  p, h1, h2, h3, h4, h5, ul, ol, li{
+    color: $grey;
+    padding-top: 1em;
+    margin: 0;
+  }
+  p{
+    padding-left: 1em;
+  }
   a, a:active, a:visited{
     font-family: "sonarbold";
     color: $blue;
@@ -91,12 +99,10 @@ body{
     background: $blue;
     color: $white;
   }
-  p{
-    padding-top: 1em;
-    padding-left: 1em;
-  }
   ul, ol{
     padding-left: 1em;
+    list-style: square;
+    padding-top: 0;
   }
 }
 
@@ -207,10 +213,12 @@ body{
 //}
 //
 //.footer {
-//    $image_base: '../images/layout/footer';
-//    width: 100%;
+//.right{
+//  $image_base: '../images/layout/footer';
+//  width: 100%;
+//  background-color: $translucent-black;
+//}
 //    margin-top: 100px;
-//    background-color: $translucent-black;
 //
 //    ul.links {
 //        padding: 0;
@@ -238,26 +246,24 @@ body{
 //                }
 //            }
 //
-//            &.twitter {
-//                a {
-//                   background-image: url("#{$image_base}/twitter_icon.png")
-//                }
-//            }
-//            &.lanyrd {
-//                a {
-//                   background-image: url("#{$image_base}/lanyrd_icon.png")
-//                }
-//            }
-//            &.facebook {
-//                a {
-//                   background-image: url("#{$image_base}/facebook_icon.png")
-//                }
-//            }
-//            &.google-plus {
-//                a {
-//                   background-image: url("#{$image_base}/google_plus_icon.png")
-//                }
-//            }
+//.twitter {
+//  background-image: url("/images/twitter_icon.png");
+//}
+//.lanyrd {
+//  a {
+//     background-image: url("/images/lanyrd_icon.png");
+//  }
+//}
+//.facebook {
+//  a {
+//     background-image: url("/images/facebook_icon.png");
+//  }
+//}
+//.google-plus {
+//  a {
+//     background-image: url("/images/google_plus_icon.png");
+//  }
+//}
 //        }
 //    }
 //}

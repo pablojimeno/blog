@@ -41,12 +41,43 @@
     = partial 'partials/analytics'
 
   %body(class="#{current_page.data.body_class}")
-    #container
-      = partial 'partials/header'
-      #main.main(role="main")
-        = yield
-        / = partial 'partials/footer'
-        %div.push
-      = partial 'partials/footer'
-    #map(class="map #{current_page.data.body_class}")
-    / = partial 'partials/event_navigation'
+
+    .fixed
+      %nav.top-bar
+        %ul.title-area
+          / Title Area
+          %li.name
+            %h1
+              %a{:href => "/"} eurucamp 2013
+          / Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
+          %li.toggle-topbar.menu-icon
+            %a{:href => "#"}
+              %span
+        %section.top-bar-section
+          / Left Nav Section
+          %ul.right
+            %li
+              //%a(href="https://twitter.com/eurucamp" title="eurucamp on Twitter") @eurucamp
+              %a(href="https://twitter.com/eurucamp")
+                %img{:src=>"/images/twitter_icon.png"}
+            %li.divider
+            %li
+              %a(href="http://lanyrd.com/2013/eurucamp")
+                %img{:src=>"/images/lanyrd_icon.png"}
+            %li.divider
+            %li
+              %a(href="https://www.facebook.com/eurucamp")
+                %img{:src=>"/images/facebook_icon.png"}  
+            %li.divider
+            %li
+              %a(href="https://plus.google.com/114984140580239329274")
+                %img{:src=>"/images/google_plus_icon.png"}  
+
+    //= partial 'partials/header'
+    #main.main(role="main")
+      = yield
+      / = partial 'partials/footer'
+      %div.push
+    = partial 'partials/footer'
+  #map(class="map #{current_page.data.body_class}")
+  / = partial 'partials/event_navigation'
