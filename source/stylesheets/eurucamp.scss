@@ -48,7 +48,7 @@ body{
   }
 }
 
-.title{
+.title, .maintitle{
   h1{
     font-family: "sonarbold";
     margin: 0;
@@ -60,6 +60,14 @@ body{
       color: $white;
     }
   }
+}
+
+.main{
+  padding-top: 5em;
+}
+
+.posts{
+  padding-top: 3em;
 }
 
 .tags{
@@ -108,6 +116,7 @@ body{
 
 .more{
   text-align: right;
+  padding-top: 1em;
   a, a:active, a:visited{
     background: $red;
     padding: .1em 1em .1em 1em;
