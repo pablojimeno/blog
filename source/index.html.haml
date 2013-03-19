@@ -11,16 +11,13 @@ body_class: blog
           .maintitle
             %h1 blog
           .links.hide-for-small
-            %a
-              %span
-                eurucamp
-              %br
-              main site
+            %a{:href=>"http://eurucamp.org"}
+              %img{:src=>"/images/logo.png"}
           .tweets.hide-for-small
             .title
               %h2 tweets
             .tweet
-              %p Congrats to last year main sponsor @scalarium... -19 days ago
+              %p coming soon...
         .small-12.large-10.columns
           .posts
             - blog.published_articles[0...20].each_with_index do |article, index|
