@@ -13,6 +13,7 @@ body{
 }
 
 .date{
+  width: 5em;
   p{
     margin: 0;
     padding: 0;
@@ -21,7 +22,7 @@ body{
   }
   span{
     font-size: 3em;
-    line-height: 1.1em;
+    line-height: 1em;
   }
 }
 
@@ -34,30 +35,37 @@ body{
 }
 
 .days{
-  padding: .1em 0 .1em 0; 
+  padding-top: .2em 0 .2em 0; 
   background: $white;
   color: $grey;
   display: block;
   font-size: 16pt;
   text-align: center;
   text-transform: uppercase;
+  p{
+    line-height: .9em;
+    padding: .1em 0 .1em 0;
+  }
 }
 
 .title{
   h1{
-    font-family: "sonarnormal";
+    font-family: "sonarbold";
     margin: 0;
     padding: 0;
     line-height: 1.1em;
+    color: $white;
+    text-transform: uppercase;      
     a{
       color: $white;
-      text-transform: uppercase;      
     }
   }
 }
 
 .tags{
   padding: .1em 0 .1em 0;
+  font-size: .7em;
+  font-family: "sonarbold";
   ul{
     list-style: none;
     li{
@@ -70,21 +78,37 @@ body{
   }
 }
 
-.summary{
+.text{
   background: $white;
   border-top: 3px solid $blue;
   border-bottom: 3px solid $blue;
   color: $grey;
+  a, a:active, a:visited{
+    font-family: "sonarbold";
+    color: $blue;
+  }
+  a:hover{
+    background: $blue;
+    color: $white;
+  }
   p{
     padding-top: 1em;
+    padding-left: 1em;
+  }
+  ul, ol{
+    padding-left: 1em;
   }
 }
 
 .more{
   text-align: right;
-  a{
+  a, a:active, a:visited{
     background: $red;
     padding: .1em 1em .1em 1em;
+    color: $white;
+  }
+  a:hover{
+    background: $blue;
     color: $white;
   }
   margin-bottom: 1em;
