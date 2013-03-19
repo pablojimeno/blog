@@ -19,7 +19,7 @@ body_class: blog
             - blog.published_articles[0...20].each_with_index do |article, index|
               .preview
                 .row
-                  .large-2.large-offset-1.columns.hide-for-small
+                  .small-3.large-2.large-offset-1.columns
                     .date
                       .years
                         %p= article.date.strftime('%Y')
@@ -29,8 +29,10 @@ body_class: blog
                           %p
                             = article.date.strftime('%d')
                         %p= article.date.strftime('%a')
-                  .small-12.large-9.columns.title
+                  .small-9.large-9.columns.title
                     %h1= link_to article.title, article.url_without_extension
+                .space.show-for-small
+                  %p &nbsp;
                 .row
                   .large-2.large-offset-1.columns.hide-for-small.tags
                     %ul
@@ -38,6 +40,6 @@ body_class: blog
                         %li
                           = tag
                   .small-12.large-9.columns.text
-                    = article.summary
+                    = md2html article.summary
                     .more
                       = link_to "read on&hellip;", article.url_without_extension
