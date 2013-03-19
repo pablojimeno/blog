@@ -1,37 +1,53 @@
 - wrap_layout :layout do
 
-
-  .row
-    .small-12.large-10.large-offset-2.columns.preview
-      .row
-        .large-2.large-offset-1.columns.hide-for-small
-          .date
-            .years
-              %p= current_article.date.strftime('%Y')
-            .days
-              %p= current_article.date.strftime('%h')
-              %p
-                %span= current_article.date.strftime('%d')
-              %p= current_article.date.strftime('%a')
-        .small-12.large-9.columns.title
-          %h1= current_article.title
-      .row
-        .large-2.large-offset-1.columns.hide-for-small.tags
-          %ul
-            - current_article.tags.each do |tag|
-              %li
-                = tag
-        .small-12.large-9.columns.text
-          = yield
-
-    = wrapped :footer do
-      %nav
-        %ul
-          - if (n = current_article.next_article)
-            %li.next
-              %span Next:
-              = link_to n.title, n.url_without_extension, :title => "Read '#{n.title}'"
-          - if (p = current_article.previous_article)
-            %li.prev
-              %span Previous:
-              = link_to p.title, p.url_without_extension, :title => "Read '#{p.title}'"
+  .main
+    .row
+      .small-12.large-2.columns
+        .maintitle
+          %h1 blog
+        .links.hide-for-small
+          %a{:href=>"http://eurucamp.org"}
+            %img{:src=>"/images/logo.png"}
+        .tweets.hide-for-small
+          .title
+            %h2 tweets
+          .tweet
+            %p coming soon...
+      .small-12.large-10.columns
+        .preview
+          .row
+            .small-3.large-2.large-offset-1.columns
+              .date
+                .years
+                  %p= current_article.date.strftime('%Y')
+                .days
+                  %p= current_article.date.strftime('%h')
+                  .number
+                    %p
+                      = current_article.date.strftime('%d')
+                  %p= current_article.date.strftime('%a')
+            .small-9.large-9.columns.title
+              %h1= current_article.title
+          .space.show-for-small
+            %p &nbsp;
+          .row
+            .large-2.large-offset-1.columns.hide-for-small.tags
+              %ul
+                - current_article.tags.each do |tag|
+                  %li
+                    = tag
+            .small-12.large-9.columns.text
+              = yield
+            .row
+              .small-6.columns
+                - if (n = current_article.next_article)
+                  .more
+                    %p
+                      next:
+                      = link_to n.title, n.url_without_extension, :title => "Read '#{n.title}'"
+              .small-6.columns
+                - if (p = current_article.previous_article)
+                  .more
+                    %p
+                      previous:
+                      = link_to p.title, p.url_without_extension, :title => "Read '#{p.title}'"

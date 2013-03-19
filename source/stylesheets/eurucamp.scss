@@ -132,6 +132,7 @@ body{
 }
 
 .more{
+  color: $blue;
   text-align: right;
   padding-top: 1em;
   text-transform: uppercase;
@@ -174,22 +175,6 @@ body{
   margin-top: 1em;
   line-height: 1.5em;
   text-align: center;
-  a, a:active, a:visited{
-    color: $blue;
-    text-transform: uppercase;
-    span{
-      font-family: "sonarbold";      
-      text-transform: none;
-    }
-  }
-}
-
-.links:hover{
-  background: $blue;
-  a, a:active, a:visited{
-    color: $white;
-    cursor: pointer;
-  }
 }
 
 .tweets{
