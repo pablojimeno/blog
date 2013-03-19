@@ -58,16 +58,29 @@
           %ul.right
             %li
               %a(href="https://twitter.com/eurucamp")
-                %img{:src=>"/images/twitter_icon.png"}
+                .hide-for-small
+                  %img{:src=>"/images/twitter_icon.png"}
+                .show-for-small
+                  TWITTER
             %li
               %a(href="http://lanyrd.com/2013/eurucamp")
-                %img{:src=>"/images/lanyrd_icon.png"}
+                .hide-for-small
+                  %img{:src=>"/images/lanyrd_icon.png"}
+                .show-for-small
+                  LANYRD
             %li
               %a(href="https://www.facebook.com/eurucamp")
-                %img{:src=>"/images/facebook_icon.png"}  
+                .hide-for-small
+                  %img{:src=>"/images/facebook_icon.png"}  
+                .show-for-small
+                  FACEBOOK
             %li
               %a(href="https://plus.google.com/114984140580239329274")
-                %img{:src=>"/images/google_plus_icon.png"}  
+                .hide-for-small
+                  %img{:src=>"/images/google_plus_icon.png"}  
+                .show-for-small
+                  GOOGLE+
+
 
     = yield
 
