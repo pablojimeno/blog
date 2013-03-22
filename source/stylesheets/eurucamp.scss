@@ -153,6 +153,40 @@ body{
   margin-bottom: 1em;
 }
 
+.navposts{
+  color: $blue;
+  padding-top: 1em;
+  text-transform: uppercase;
+  p{
+    text-align: right;
+  }
+  margin-bottom: 1em;
+}
+
+.postlink{
+  display: block;
+  background: $red;
+  padding: .3em 1em .3em 1em;
+  a, a:active, a:visited{
+    line-height: 1.5em;
+    text-align: left;
+    font-family: "sonarnormal";
+    color: $white;
+    padding{
+      top: .3em;
+      bottom: .3em;
+    }
+
+  }
+  a:hover{
+    background: $blue;
+    color: $white;
+  }
+  &:hover{
+    background: $blue;
+  }
+}
+
 .name{
   h1{
     a{

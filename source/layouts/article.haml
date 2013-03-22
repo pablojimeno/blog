@@ -41,13 +41,19 @@
             .row
               .small-6.columns
                 - if (n = current_article.next_article)
-                  .more
-                    %p
-                      next:
-                      = link_to n.title, n.url_without_extension, :title => "Read '#{n.title}'"
+                  .row
+                    .navposts
+                      .small-3.columns
+                        %p next
+                      .small-9.columns
+                        .postlink
+                          = link_to n.title, n.url_without_extension, :title => "Read '#{n.title}'"
               .small-6.columns
                 - if (p = current_article.previous_article)
-                  .more
-                    %p
-                      previous:
-                      = link_to p.title, p.url_without_extension, :title => "Read '#{p.title}'"
+                  .row
+                    .navposts
+                      .small-3.columns
+                        %p previous
+                      .small-9.columns
+                        .postlink
+                          = link_to p.title, p.url_without_extension, :title => "Read '#{p.title}'"
