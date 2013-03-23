@@ -9,22 +9,24 @@ body{
 }
 
 .preview{
-  padding: 1em 0 1em 0;
+  padding: 0em 0 1em 0;
 }
 
 .date{
-  width: 5em;
+  margin: .5em 0 0 0;
+  width: 4em;
+  float: right;
   p{
     margin: 0;
     padding: 0;
     line-height: .8em;
-    font-size: .8em;
+    font-size: .6em;
   }
 }
 
 .number{
   p{
-    font-size: 2em;
+    font-size: 1.2em;
     line-height: 1em;
     font-family: "sonarbold";
     margin-top: -0.3em;
@@ -78,6 +80,10 @@ body{
   border-bottom: 3px solid $blue;
 }
 
+.post-header{
+  padding-bottom: 2em;
+}
+
 .posts{
   padding-top: 3em;
 }
@@ -90,10 +96,10 @@ body{
     list-style: none;
     li{
       background: $blue;
-      color: $white;
+      color: $black;
       text-align: center;
       text-transform: uppercase;
-      margin-top: 1em;
+      margin-top: 0em;
     }
   }
 }

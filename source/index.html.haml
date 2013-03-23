@@ -22,7 +22,7 @@ body_class: blog
           .posts
             - blog.published_articles[0...20].each_with_index do |article, index|
               .preview
-                .row
+                .row.post-header
                   .small-3.large-2.large-offset-1.columns
                     .date
                       .years
