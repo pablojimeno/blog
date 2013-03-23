@@ -21,20 +21,30 @@ Middleman::Sitemap::Resource.class_eval do
   end
 end
 
-activate :blog do |blog|
-  blog.layout  = "article"
-  blog.sources = "blog/:year-:month-:day-:title.html"
+# Time.zone = "UTC"
 
-  #blog.permalink  = "blog/:year/:month/:day/:title"
-  #blog.taglink    = "/blog/tags/:tag"
-  #blog.year_link  = "/blog/:year"
-  #blog.month_link = "/blog/:year/:month"
-  #blog.day_link   = "/blog/:year/:month/:day"
+activate :blog do |blog|
+  blog.layout  = 'article'
+  blog.sources = 'blog/:year-:month-:day-:title.html'
+
+  # blog.prefix = "blog"
+  # blog.permalink = ":year/:month/:day/:title.html"
+  # blog.taglink = "tags/:tag.html"
+  # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
+  # blog.year_link = ":year.html"
+  # blog.month_link = ":year/:month.html"
+  # blog.day_link = ":year/:month/:day.html"
   # blog.default_extension = ".markdown"
-  #blog.tag_template      = "blog/tag"
-  #blog.calendar_template = "blog/calendar"
+
+  blog.tag_template = "tag.html"
+  blog.calendar_template = "calendar.html"
+
+  blog.paginate = true
+  # blog.per_page = 10
+  # blog.page_link = "page/:num"
 end
+
 
 Middleman::Blog::BlogData.class_eval do
   alias :all_articles :articles
