@@ -15,52 +15,10 @@ per_page: 10
           .links.hide-for-small
             %a{:href=>"http://eurucamp.org"}
               %img{:src=>"/images/logo.png"}
-          %aside
-            %h2 Recent Articles
-            %ol
-              - blog.articles[0...10].each do |article|
-                %li
-                  = link_to article.title, article.url
-                  %span= article.date.strftime('%b %e')
-            %h2 Tags
-            %ol
-              - blog.tags.each do |tag, articles|
-                %li= link_to "#{tag} (#{articles.size})", tag_path(tag)
-            %h2 By Year
-            %ol
-              - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
-                %li= link_to "#{year} (#{articles.size})", blog_year_path(year)
-
+          = partial 'partials/aside'
         .small-12.large-10.columns
           .posts
-            - page_articles.each_with_index do |article, index|
-              .preview
-                .row.post-header
-                  .small-3.large-2.large-offset-1.columns
-                    .date
-                      .years
-                        %p= article.date.strftime('%Y')
-                      .days
-                        %p= article.date.strftime('%h')
-                        .number
-                          %p
-                            = article.date.strftime('%d')
-                        %p= article.date.strftime('%a')
-                  .small-9.large-9.columns.title
-                    %h1= link_to article.title, article.url_without_extension
-                .space.show-for-small
-                  %p &nbsp;
-                .row
-                  .large-2.large-offset-1.columns.hide-for-small.tags
-                    %ul
-                      - article.tags.each do |tag|
-                        %li
-                          = tag
-                  .small-12.large-9.columns.text
-                    = md2html article.summary
-                    .more
-                      = link_to "read on&hellip;", article.url_without_extension
-
+            = partial 'partials/post_preview', collection: page_articles
           - if paginate
             - if prev_page
               = link_to 'Previous page', prev_page

@@ -8,14 +8,10 @@
         .links.hide-for-small
           %a{:href=>"http://eurucamp.org"}
             %img{:src=>"/images/logo.png"}
-        .tweets.hide-for-small
-          .title
-            %h2 tweets
-          .tweet
-            %p coming soon...
+        = partial 'partials/aside'
       .small-12.large-10.columns
         .preview
-          .row
+          .row.post-header
             .small-3.large-2.large-offset-1.columns
               .date
                 .years

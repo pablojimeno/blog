@@ -1,0 +1,9 @@
+%aside
+  %h2 Tags
+  %ul.tags
+    - blog.tags.each do |tag, articles|
+      %li= link_to "#{tag} (#{articles.size})", tag_path(tag)
+  %h2 By Year
+  %ul.by-year
+    - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
+      %li= link_to "#{year} (#{articles.size})", blog_year_path(year)
