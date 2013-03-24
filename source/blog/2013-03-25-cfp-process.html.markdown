@@ -16,7 +16,7 @@ READMORE
 "diverse" is en vogue at the moment, but no one seems to care to define what their focus is. Diversity comes in many shapes and colors (ha!), so I'd like to define our way of thinking about it. We'd like to have a selection process that is:
 
 * not biased by properties like gender, race or nationality
-* allows newcomers and community veterans alike
+* allows new and seasoned Rubyists alike
 * encourages unusual topics and "ready-to-use" talks alike
 * encourages unusual talk formats
 * encourages people that would otherwise not submit
