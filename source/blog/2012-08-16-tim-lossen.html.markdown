@@ -1,7 +1,7 @@
 ---
 title: "Schedule Change: Tim Lossen"
 date: 2012-08-16
-tags: sponsors
+tags: [JRubyConf, speakers]
 author: Alex Coles
 body_class: article talks
 published: true

@@ -1,7 +1,7 @@
 ---
 title: "Meet our Sponsors: Neo4j"
 date: 2012-08-10
-tags: sponsors
+tags: [JRubyConf, sponsors]
 author: Florian Gilcher
 body_class: article sponsors
 published: true

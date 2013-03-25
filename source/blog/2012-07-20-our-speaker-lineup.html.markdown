@@ -1,7 +1,7 @@
 ---
 title: Our speaker lineup
 date: 2012-07-20
-tags: speakers
+tags: [JRubyConf, speakers]
 author: Alex Coles
 body_class: article speakers
 published: true
