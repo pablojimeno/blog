@@ -33,7 +33,7 @@ eurucamp is still a curated conference and building a coherent and useful body o
 
 CFP via pull requests got rather popular lately. We are very (outspoken against them)[http://www.asquera.de/blog/2012-08-22/hip-but-flawed]. We believe that this form of CFP (or any form of public voting) disencourages speakers that are not sure of their proposal and biases towards seasoned speakers or popular community members. While those shouldn't be missed, they will likely submit anyways.
 
-Another move we see lately is to have a CFP for a very limited number of slots, with all other slots filled by invited speakers. The extreme form is no CFP at all ("speakers are being cherry-picked based on their exceptional work and ideas."). We think that the promised value of this attempts - a more controlled talk list of seasoned veterans - is a treacherous one: it completely eliminates surprises, as all speakers are usually well known.
+Another move we see lately is to have a CFP for a very limited number of slots, with all other slots filled by invited speakers. The extreme form is no CFP at all (sometimes called "cherry-picking"). We think that the promised value of this attempts - a more controlled talk list of seasoned veterans - is a treacherous one: it completely eliminates surprises, as all speakers are usually well known.
 
 ## What our CFP process looks like
 
