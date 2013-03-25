@@ -19,7 +19,7 @@
       %ul.tags
         - post_preview.tags.each do |tag|
           %li
-            = tag
+            = link_to tag, tag_path(tag)
     .small-12.large-9.columns.text
       = md2html post_preview.summary
       .more
