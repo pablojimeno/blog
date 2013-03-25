@@ -7,7 +7,7 @@ body_class: article sponsors
 published: true
 ---
 
-We are thrilled to have another high-profile sponsor on our JRubyConf EU sponsors list: [Neo Technology][neotechnology], the people behind the Graph database [Neo4j](http://neo4j.org). 
+We are thrilled to have another high-profile sponsor on our JRubyConf EU sponsors list: [Neo Technology][neotechnology], the people behind the Graph database [Neo4j](http://neo4j.org).
 
 READMORE
 
@@ -23,7 +23,7 @@ As a Java-based database we especially embrace languages on the JVM which can ac
 
 From the beginning there have been strong drivers for Neo4j developed by members of the JRuby community, most notably [neo4j.rb](http://neo4j.rubyforge.org) by [Andreas Ronge](http://twitter.com/ronge) and [Pacer](https://github.com/pangloss/pacer) by [Darrick Wiebe](http://twitter.com/darrickwiebe).
 
-These gems are used a number of applications, a local one to Berlin is [MoviePilot](http://moviepilot.com), whose international platform runs on (J)Ruby and Neo4j. They also moved the driver forward with feedback and also provided new gems like [Jogger](http://moviepilotlabs.tumblr.com/post/18616539642/jogger-almost-like-named-scopes) for using Neo4j from JRuby. 
+These gems are used a number of applications, a local one to Berlin is [MoviePilot](http://moviepilot.com), whose international platform runs on (J)Ruby and Neo4j. They also moved the driver forward with feedback and also provided new gems like [Jogger](http://moviepilotlabs.tumblr.com/post/18616539642/jogger-almost-like-named-scopes) for using Neo4j from JRuby.
 
 Graphs are great for managing real-world data, and for very [cool visualizations](http://maxdemarzi.com/category/visualization/) too.
 

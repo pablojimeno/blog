@@ -1,6 +1,6 @@
 ---
 title: "eurucamp 2013 CFP process"
-date: 2013-03-25  
+date: 2013-03-25
 tags: hackdays
 author: Florian Gilcher
 body_class: article
@@ -43,6 +43,6 @@ No process is unbiased, but we feel that the jsconf process shifts bias towards 
 
 ## Encouragement
 
-This leaves one problem unsolved: we can never rate unsubmitted talks. This is why we have to methods of encouragement: speaker coaching and nominations. The first one is adopted from jsconf.eu again. We provide an open ear for those that want to submit but are not sure of whether they can pull a talk through.  Along with that, we will provide slidedecks for those that don't feel like they can build a proper presentations in time. 
+This leaves one problem unsolved: we can never rate unsubmitted talks. This is why we have to methods of encouragement: speaker coaching and nominations. The first one is adopted from jsconf.eu again. We provide an open ear for those that want to submit but are not sure of whether they can pull a talk through.  Along with that, we will provide slidedecks for those that don't feel like they can build a proper presentations in time.
 
 Another form of encouragement are nominations: in our CFP app, you will find a button "Nominate", where you can send a short notice to someone that you think has an interesting topic. Encourage them to speak about it! Be aware that Nominations are not instantanious, as we review them, to avoid spamming if significant community members.

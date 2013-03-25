@@ -7,7 +7,7 @@ body_class: article speakers
 published: true
 ---
 
-We're thrilled to finally announce our full lineup of speakers. 
+We're thrilled to finally announce our full lineup of speakers.
 
 Despite JRubyConf EU coming about at the relative last-minute, we think our speaker lineup is superb. JRubyConf EU in its infancy is a one-day event and, this time around, we were only able to accommodate a limited number of talks. Nonetheless all of the proposals we received were of a very high standard.
 
