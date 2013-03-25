@@ -34,7 +34,7 @@ Download and install [POW](http://pow.cx/):
 Then:
 
     cd ~/.pow
-    ln -s /path/to/eurucamp_website eurucamp
+    ln -s /path/to/blog blog
 
 You will see the generated HTML & CSS by navigating to <http://eurucamp.dev/>.
 
@@ -51,7 +51,7 @@ Deployment
 
 ### Staging
 
-* <http://dev.eurucamp.org/>
+* <http://blog-staging.eurucamp.org/>
 * `bundle exec rake staging deploy`
 
 ### Production

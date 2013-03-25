@@ -1,7 +1,7 @@
 xml.instruct!
 xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
   xml.title    'eurucamp Blog'
-  xml.subtitle 'european ruby camp | summer edition'
+  xml.subtitle 'blog for eurucamp, the european ruby camp, and JRubyConf EU'
   xml.id   'http://blog.eurucamp.org/'
   xml.link href: 'http://blog.eurucamp.org/'
   xml.link href: 'http://blog.eurucamp.org/feed.xml', rel: 'self'
