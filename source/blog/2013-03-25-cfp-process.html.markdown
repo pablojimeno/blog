@@ -16,7 +16,7 @@ READMORE
 "diverse" is en vogue at the moment, but no one seems to care to define what their focus is. Diversity comes in many shapes and colors (ha!), so I'd like to define our way of thinking about it. We'd like to have a selection process that is:
 
 * not biased by properties like gender, race or nationality
-* allows newcomers and community veterans alike
+* allows new and seasoned Rubyists alike
 * encourages unusual topics and "ready-to-use" talks alike
 * encourages unusual talk formats
 * encourages people that would otherwise not submit
@@ -39,7 +39,7 @@ Another move we see lately is to have a CFP for a very limited number of slots, 
 
 Our CFP process is modeled after the [jsconf.eu](https://jsconf.eu) process and is similar to the one that we (silently) ran last year. Its a two-step process: it consists of an anonymous phase, in which all proposals are rated without speaker information. In a second phase, we de-anonymize the proposals and rate them again. After that, we try to fit them into a coherent program. This might mean that good proposals will be thrown out because they don't fit this years program.
 
-No process is unbiased, but we feel that the jsconf process shits biases towards _a good program_ above all.
+No process is unbiased, but we feel that the jsconf process shifts bias towards _a good program_ above all.
 
 ## Encouragement
 
