@@ -2,23 +2,8 @@
 pageable: true
 ---
 
-%article
-  %section
-    .main
-      .row
-        .small-12.large-2.columns
-          .maintitle
-            %h1 blog
-            %h2 Archive
-          .links.hide-for-small
-            %a{:href=>"http://eurucamp.org"}
-              %img{:src=>"/images/logo.png"}
-        .small-12.large-10.columns
-          .posts
-            = partial 'partials/post_preview', collection: page_articles
-          - if paginate
-            - if prev_page
-              = link_to 'Previous page', prev_page
-            %span Page #{page_number} of #{num_pages}
-            - if next_page
-              = link_to 'Next page', next_page
+
+.posts
+  = partial 'partials/post_preview', collection: page_articles
+- if paginate
+  = partial 'partials/pagination', locals: { prev_page: prev_page, next_page: next_page, page_number: page_number, num_pages: num_pages }

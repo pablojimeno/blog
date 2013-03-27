@@ -5,35 +5,7 @@ pageable: true
 per_page: 10
 ---
 
-%article
-  %section
-    .main
-      .row
-        .small-12.large-2.columns
-          .maintitle
-            %h1
-              = link_to 'blog', '/'
-          .links.hide-for-small
-            %a{:href=>"http://eurucamp.org"}
-              %img{:src=>"/images/logo.png"}
-          = partial 'partials/aside'
-        .small-12.large-10.columns
-          .posts
-            = partial 'partials/post_preview', collection: page_articles
-          - if paginate
-            .navposts
-              .small-4.columns
-                - if prev_page
-                  .postlink
-                    = link_to 'Previous page', prev_page
-                - else
-                  %p &nbsp;
-              .small-4.columns
-                .pages
-                  %p page #{page_number} of #{num_pages}
-              .small-4.columns
-                - if next_page
-                  .postlink
-                    = link_to 'Next page', next_page
-                - else
-                  %p &nbsp;
+.posts
+  = partial 'partials/post_preview', collection: page_articles
+- if paginate
+  = partial 'partials/pagination', locals: { prev_page: prev_page, next_page: next_page, page_number: page_number, num_pages: num_pages }

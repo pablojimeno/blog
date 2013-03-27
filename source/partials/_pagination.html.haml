@@ -1,0 +1,16 @@
+.navposts
+  .small-4.columns
+    - if prev_page
+      .postlink
+        = link_to 'Previous page', prev_page
+    - else
+      %p &nbsp;
+  .small-4.columns
+    .pages
+      %p page #{page_number} of #{num_pages}
+  .small-4.columns
+    - if next_page
+      .postlink
+        = link_to 'Next page', next_page
+    - else
+      %p &nbsp;

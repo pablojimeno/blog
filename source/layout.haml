@@ -75,14 +75,17 @@
               %a(href="http://eurucamp.org")
                 eurucamp MAIN SITE
 
-    = yield
-
-    //= partial 'partials/header'
-    //#main.main(role="main")
-
-    / = partial 'partials/footer'
-    //%div.push
-    //= partial 'partials/footer'
+    .main
+      .row
+        .small-12.large-2.columns
+          .maintitle
+            %h1 blog
+          .links.hide-for-small
+            %a{:href=>"http://eurucamp.org"}
+              %img{:src=>"/images/logo.png"}
+          = partial 'partials/aside'
+        .small-12.large-10.columns
+          = yield
 
     :javascript
       document.write('<script src=' +
