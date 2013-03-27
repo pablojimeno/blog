@@ -15,24 +15,15 @@
     //%link(href="apple-touch-icon-72x72-precomposed.png" sizes="72x72" rel="apple-touch-icon")
     //%link(href="apple-touch-icon-114x114-precomposed.png" sizes="114x114" rel="apple-touch-icon")
 
-
-    = stylesheet_link_tag 'http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css'
     = stylesheet_link_tag 'app'
 
     %script(src="/javascripts/lib/modernizr.js")
-    =javascript_include_tag('http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js')
 
     :javascript
       Modernizr.load([
         {
           test: Modernizr.mq('only all'),
           nope: '/javascripts/lib/mq_polyfill.js'
-        },{
-          test: Modernizr.fontface,
-          yep : 'http://use.typekit.com/uxm6bkh.js',
-          complete: function() {
-            //try { Typekit.load(); } catch(e) {};
-          }
         },{
           load: '/javascripts/application.js'
         }
@@ -92,8 +83,6 @@
     / = partial 'partials/footer'
     //%div.push
     //= partial 'partials/footer'
-    //#map(class="map #{current_page.data.body_class}")
-    // = partial 'partials/event_navigation'
 
     :javascript
       document.write('<script src=' +
