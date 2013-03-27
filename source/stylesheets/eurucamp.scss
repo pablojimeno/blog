@@ -31,11 +31,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .number{
   p{
-    font-size: 1.2em;
+    font-size: 1.3em;
     line-height: 1em;
     font-family: "sonarbold";
-    margin-top: -0.3em;
-    margin-bottom: 0;
+    margin-top: -0.2em;
+    //margin-bottom: -0.1em;
   }
 }
 
@@ -44,12 +44,15 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "sonarbold";
   background: $red;
   color: $white;
-  font-size: 1em;
+  font-size: 1.5em;
   text-align: center;
-  padding: .5em 0 .5em 0;
+  padding: .2em 0 .2em 0;
+  letter-spacing: .05em;
 }
 
 .days{
+  letter-spacing: .05em;
+  font-family: "sonarnormal";
   padding: .2em 0 .2em 0;
   background: $white;
   color: $grey;
