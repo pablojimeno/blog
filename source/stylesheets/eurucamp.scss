@@ -199,9 +199,11 @@ aside h2 {
   padding-top: 1em;
   text-transform: uppercase;
   p{
-    text-align: right;
+    padding-top: 1em;
+    text-align: left;
+    margin-bottom: 0;
+    padding-left: 1em;
   }
-  margin-bottom: 1em;
 }
 
 .postlink{

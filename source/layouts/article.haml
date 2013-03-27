@@ -39,17 +39,17 @@
                 - if (n = current_article.next_article)
                   .row
                     .navposts
-                      .small-3.columns
+                      .small-12.columns
                         %p next
-                      .small-9.columns
+                      .small-12.columns
                         .postlink
                           = link_to n.title, n.url_without_extension, :title => "Read '#{n.title}'"
               .small-6.columns
                 - if (p = current_article.previous_article)
                   .row
                     .navposts
-                      .small-3.columns
+                      .small-12.columns
                         %p previous
-                      .small-9.columns
+                      .small-12.columns
                         .postlink
                           = link_to p.title, p.url_without_extension, :title => "Read '#{p.title}'"
