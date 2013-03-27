@@ -117,18 +117,31 @@ aside h2 {
 
 .tags{
   @extend .category-lists;
+  font-family: "sonarnormal";
   li {
-    background: $blue;
-    color: $black;
+    color: $blue;
     list-style: none;
+    letter-spacing: .1em;
+    border-bottom: 1px solid $blue;
+    &:hover{
+      background: $blue;
+      color: $white;
+    }
   }
 }
 
 .by-year{
   @extend .category-lists;
+  font-family: "sonarnormal";
   li {
-    background: $red;
-    color: $white;
+    color: $red;
+    border-bottom: 1px solid $red;
+    letter-spacing: .1em;
+    &:hover{
+      background: $red;
+      color: $white;
+    }
+
   }
 }
 
@@ -181,9 +194,10 @@ aside h2 {
   text-align: right;
   padding-top: 1em;
   text-transform: uppercase;
+  font-size: .8em;
   a, a:active, a:visited{
     font-family: "sonarnormal";
-    background: $dark-grey;
+    background: $red;
     padding: .2em 1em .2em 1em;
     color: $white;
   }
