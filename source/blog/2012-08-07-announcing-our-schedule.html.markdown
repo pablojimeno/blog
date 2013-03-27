@@ -16,15 +16,17 @@ published: true
   we've succeeded – judge for yourself.
 
   * Steve Klabnik of Hackety Hack fame will be giving our keynote Friday night
-  on [Development and
-  Philosophy][klabnik].
+  on [Development and Philosophy][klabnik].
+
   * Lunch Saturday is *five hours long* – take a boat out on the water, hike or
   bike around the lakeshore, hit up a brewery or take a nap.  The venue is an
   amazing piece of nature, and it's all yours to enjoy with your fellow
   eurucampers.
+
   * Sunday morning there'll be a [Fishbowl Discussion][fishbowl], giving
   everyone a chance to take part in a wide-ranging, eclectic group
   conversation.
+
   * And that's in addition to [our talks][speakers]: a wide and talented group of 18 speakers, talking on
   subjects as diverse as multiple languages in Rubinius, RubyMotion,
   dependency injection, Rails engines, concurrency, complex calculation,

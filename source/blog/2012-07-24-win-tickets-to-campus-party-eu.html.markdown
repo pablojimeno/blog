@@ -8,11 +8,7 @@ published: true
 ---
 
 Coming to Berlin the week following eurucamp is Campus Party EU, and eurucamp is proud to be a partner with this momentous event.
-
 READMORE
-
-<iframe id='ace61c14' name='ace61c14' src='http://ads.campus-party.org/www/delivery/afr.php?zoneid=399&amp;cb=INSERT_RANDOM_NUMBER_HERE' frameborder='0' scrolling='no' width='300' height='250'><a href='http://ads.campus-party.org/www/delivery/ck.php?n=a1f0fb7e&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://ads.campus-party.org/www/delivery/avw.php?zoneid=399&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a1f0fb7e' border='0' alt='' /></a></iframe>
-
 
 If eurucamp has whetted your appetite, then check out what is billed as the "largest technology festival in the world". Campus Party EU is focussed on innovation, creativity, science and digital entertainment.
 
