@@ -17,7 +17,7 @@ The theme of eurucamp hackdays 2 is "Bring your own code". We'd like to encourag
 
 ## Location
 
-As the last hackdays, eurucamp hackdays 2 will take place at [co.up](http://co-up.de). The event will take place on `April 6 and 7`. You can drop by at any time after `9:00` in the morning on both days, doors will be open by then. The event is open-ended. Try to contact one of the organizers beforehand if you want to come in late at night.
+As the last hackdays, eurucamp hackdays 2 will take place at [co.up](http://co-up.de). The event will take place on **April 6 and 7**. You can drop by at any time after **9:00** in the morning on both days, doors will be open by then. The event is open-ended. Try to contact one of the organizers beforehand if you want to come in late at night.
 
 ## Contact
 
