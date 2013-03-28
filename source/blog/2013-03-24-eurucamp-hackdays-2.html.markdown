@@ -7,7 +7,7 @@ body_class: article
 published: true
 ---
 
-eurucamp is more than a conference(&trade;). It is a community event, happening in and around Berlin, organized around a conference. To reinforce this, we started running a number of hackdays, starting with the first event on February 2nd&3rd. This is our official program for our next one on April 6 and 7. The follow up event, eurucamp hakdays 2, will take place in [co.up](http://co-up.de/events.html) again. You can see our full event history [here](https://tito.io/eurucamp/). Read more for details.
+eurucamp is more than a conference(&trade;). It is a community event, happening in and around Berlin, organized around a conference. To reinforce this, we started running a number of hackdays, starting with the first event on 2nd & 3rd February. This is our official program for our next one on April 6 and 7. The follow-up event, eurucamp hackdays 2, will take place in [co.up](http://co-up.de/events.html) again. You can see our full event history [here](https://tito.io/eurucamp/). Read more for details.
 
 READMORE
 
@@ -29,5 +29,5 @@ You can find us on:
 Although not necessary, we would recommend you to register at any of those:
 
 * [Meetup](http://www.meetup.com/eurucamp-hackfests/events/108857812/)
-* [Lanyard](http://lanyrd.com/2013/euruhack2/)
+* [Lanyrd](http://lanyrd.com/2013/euruhack2/)
 * [tito](https://tito.io/eurucamp/eurucamp-2013-hackdays-2-bring-you-own-code)
