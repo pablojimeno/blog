@@ -39,5 +39,5 @@ You can find us on:
 Although not necessary, we would recommend you to register at any of those:
 
 * [Meetup](http://www.meetup.com/eurucamp-hackfests/events/108857812/)
-* [Lanyard](http://lanyrd.com/2013/euruhack2/)
+* [Lanyrd](http://lanyrd.com/2013/euruhack2/)
 * [tito](https://tito.io/eurucamp/eurucamp-2013-hackdays-2-bring-you-own-code)
