@@ -19,6 +19,16 @@ The theme of eurucamp hackdays 2 is "Bring your own code". We'd like to encourag
 
 As the last hackdays, eurucamp hackdays 2 will take place at [co.up](http://co-up.de). The event will take place on **April 6 and 7**. You can drop by at any time after **9:00** in the morning on both days, doors will be open by then. The event is open-ended. Try to contact one of the organizers beforehand if you want to come in late at night.
 
+## Projects
+
+### Rubymonsters
+
+The [Rubymonsters](http://twitter.com/rubymonsters) will visit us! The rubymonsters are a monday evening study group started by [@svenfuchs](http://twitter.com/svenfuchs) and [@fidothe](http://twitter.com/fidothe). They code waffles, sunshine and world peace. If thats not a project that everyone can get behind, I don't know what is.
+
+### Padrino
+
+[Padrino](http://padrinorb.com) is a Ruby web framework. It is based on [Sinatra](http://sinatrarb.com) and provides an easily costumizable environment to build complex web applications. We have a core member and a few users around that want to revamp the guides system.
+
 ## Contact
 
 You can find us on:
@@ -29,5 +39,5 @@ You can find us on:
 Although not necessary, we would recommend you to register at any of those:
 
 * [Meetup](http://www.meetup.com/eurucamp-hackfests/events/108857812/)
-* [Lanyrd](http://lanyrd.com/2013/euruhack2/)
+* [Lanyard](http://lanyrd.com/2013/euruhack2/)
 * [tito](https://tito.io/eurucamp/eurucamp-2013-hackdays-2-bring-you-own-code)

@@ -13,10 +13,10 @@ READMORE
 
 ## Our Goal: A diverse conference
 
-"diverse" is en vogue at the moment, but no one seems to care to define what their focus is. Diversity comes in many shapes and colors (ha!), so I'd like to define our way of thinking about it. We'd like to have a selection process that is:
+"diverse" is en vogue at the moment, but no one seems to care to define what their focus is. Diversity comes in many shapes and colors (ha!), so I'd like to define our way of thinking about it. We'd like to have a selection process that:
 
-* not biased by properties like gender, race or nationality
-* allows new and seasoned Rubyists alike
+* is not biased by gender, race or nationality
+* attracts new and seasoned rubyists alike
 * encourages unusual topics and "ready-to-use" talks alike
 * encourages unusual talk formats
 * encourages people that would otherwise not submit
@@ -27,7 +27,7 @@ We are aware that this is idealistic, but we'd like to get enable this as good a
 
 We don't want to split our slots with strict rules. There is no "beginner" slot. There is also no "female" slot. There are only blank slots to be filled with an interesting mix. We do, however, believe our community has enough to offer to fulfill this vision of the conference without compromising.
 
-eurucamp is still a curated conference and building a coherent and useful body of talks is still the main concern of the conference.
+eurucamp is a curated conference and building a coherent and useful body of talks is still the main concern of the conference.
 
 ## Ruled-out CFP styles
 
