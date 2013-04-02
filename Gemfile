@@ -17,6 +17,7 @@ gem 'redcarpet'
 gem 'pygments.rb'
 gem "middleman-livereload"
 gem "newrelic_rpm"
+gem 'puma',              '~>1.6.3'
 
 gem 'html5-boilerplate', :require => 'html5-boilerplate',
                          :git     => 'git://github.com/edenspiekermann/compass-html5-boilerplate.git',
@@ -24,6 +25,7 @@ gem 'html5-boilerplate', :require => 'html5-boilerplate',
 
 group :development do
   gem 'heroku',       '2.26.6', :require => false
+  gem 'foreman'
 end
 
 # FIXME: Need to set this up with Bundler groups correctly
