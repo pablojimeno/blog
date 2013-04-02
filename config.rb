@@ -5,6 +5,7 @@ require 'active_support/core_ext/string'
 require 'app/helpers/html5_boilerplate_helper'
 require 'icalendar'
 require "zurb-foundation"
+require 'newrelic_rpm' if ENV['RACK_ENV'] == 'production'
 
 Haml::Filters.remove_filter('Markdown')
 Haml::Filters.register_tilt_filter('Markdown', template_class: Tilt::RedcarpetTemplate::Redcarpet2)
@@ -145,6 +146,3 @@ configure :build do
   # set :http_path, "/Content/images/"
 end
 
-configure :production do
-  require 'newrelic_rpm'
-end
