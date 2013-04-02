@@ -1,0 +1,28 @@
+---
+title: "eurucamp 2013"
+date: 2013-04-02
+tags: eurucamp
+author: Florian Gilcher
+body_class: article
+published: false
+---
+
+The [Ruby Berlin e.V.](http://rubyberlin.org/) and the [eurucamp team](http://eurucamp.org) are happy to fully announce eurucamp 2013 - this time as part of the eurucamp week.
+
+READMORE
+
+eurucamp 2013 will take place again from on August 16.-18. at Hotel Müggelsee. As last year, it will consist of 1 day of workshops an a weekend of talks and activites around and on Lake Müggelsee. We'd like to invite everyone to join us for 3 days of code and discussions about Ruby and Technology. Contrary to last year, [JRubyConf.eu](http://jrubyconf.eu) will not be a track of eurucamp - it will happen as a full conference just before eurucamp, on August 14. and 15.
+
+## Tickets
+
+eurucamp 2013 tickets will go on sale this week. Follow this [blog](http://blog.eurucamp.org) or our [Twitter](http://twitter.com/eurucamp) and [App.net](http://app.net/eurucamp) streams for updates on the exact dates. A limited number of early bird tickets will go on sale for 99 Euros.
+
+Tickets will be a bit more expensive this year, as we want to cover more of our expenses with ticket sales. [TODO: link to detailed explanation]().
+
+## Call for papers
+
+The CFP process is described [TODO: here](). We will follow a half-blind process similar to [jsconf.eu](http://jsconf.eu), which is explained in detail [here TODO: link to explanation blog post]. Most talk slots are available through the CFP process. Beginners and first-time speakers are very welcome to take the stage.
+
+## eurucamp week
+
+eurucamp 2013 is part of the eurucamp week. See this [blog post]() to get an idea what eurucamp week looks like to make your travel arrangements accordingly.
