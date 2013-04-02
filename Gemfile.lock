@@ -100,6 +100,7 @@ GEM
     mime-types (1.21)
     multi_json (1.6.1)
     netrc (0.7.7)
+    newrelic_rpm (3.6.0.78)
     nokogiri (1.5.6)
     padrino-core (0.10.7)
       activesupport (~> 3.2.0)
@@ -173,6 +174,7 @@ DEPENDENCIES
   middleman (~> 3.0.9)
   middleman-blog (~> 3.1.1)
   middleman-livereload
+  newrelic_rpm
   nokogiri
   pygments.rb
   rack-contrib

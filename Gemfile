@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '1.9.3'
+
 gem 'rake',              '~> 10.0.3'
 gem 'sass',              '~> 3.2.5'
 gem 'zurb-foundation',   '~> 4.0.5', require: false
@@ -14,6 +16,7 @@ gem 'nokogiri'
 gem 'redcarpet'
 gem 'pygments.rb'
 gem "middleman-livereload"
+gem "newrelic_rpm"
 
 gem 'html5-boilerplate', :require => 'html5-boilerplate',
                          :git     => 'git://github.com/edenspiekermann/compass-html5-boilerplate.git',
