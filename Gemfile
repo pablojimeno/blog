@@ -16,6 +16,7 @@ gem 'nokogiri'
 gem 'redcarpet'
 gem 'pygments.rb'
 gem "middleman-livereload"
+gem "newrelic_rpm"
 
 gem 'html5-boilerplate', :require => 'html5-boilerplate',
                          :git     => 'git://github.com/edenspiekermann/compass-html5-boilerplate.git',
