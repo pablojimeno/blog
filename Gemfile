@@ -7,7 +7,7 @@ gem 'sass',              '~> 3.2.5'
 gem 'zurb-foundation',   '~> 4.0.5', require: false
 gem 'rb-inotify', '~> 0.9', require: false
 
-gem 'middleman',         '~> 3.0.9'
+gem 'middleman',         '~> 3.0.13'
 gem 'middleman-blog',    '~> 3.1.1'
 gem 'builder'
 gem 'sitemap_generator'
