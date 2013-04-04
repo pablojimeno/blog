@@ -28,10 +28,13 @@ group :development do
   gem 'foreman'
 end
 
+group :production do
+  gem 'puma',         '~> 1.6.3'
+  gem 'rack-contrib'
+  gem 'rack-rewrite'
+end
+
 # FIXME: Need to set this up with Bundler groups correctly
 gem 'heroku_san',   '3.0.2'
-
-gem 'rack-contrib'
-gem 'rack-rewrite'
 
 gem 'icalendar'
