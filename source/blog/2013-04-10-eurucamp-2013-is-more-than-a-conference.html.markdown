@@ -1,6 +1,6 @@
 ---
 title: "eurucamp 2013 is more than a conference"
-date: 2013-03-26
+date: 2013-04-10
 tags: [eurucamp, jrubyconf]
 author: Florian Gilcher
 body_class: article
