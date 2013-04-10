@@ -23,7 +23,7 @@ JRubyConf EU will take place on 14 - 15 August and eurucamp from 16 - 18 August.
 
 ## Cost-covering tickets
 
-Last year, we made the mistake of offering some tickets did not cover all running costs of the conference (especially meal costs). This meant that we had to use a substantial amount of sponsor money to cover up the remaining costs, drawing funds from other important things like taping the talks. We'd like to avoid this situation this year. This means that this years prices for the tickets will rise moderately, but not in an uncontrolled fashion. We will, however, continue to offer discounts for students and beginners.
+Last year, we made the mistake of offering some tickets did not cover all running costs of the conference (especially meal costs). This meant that we had to use a substantial amount of sponsor money to cover up the remaining costs, drawing funds from other activities. We'd like to avoid this situation this year. This means that this year's prices for the tickets have risen moderately. We will, however, continue to offer discounts for students and beginners.
 
 ## Engineering serendipity
 
