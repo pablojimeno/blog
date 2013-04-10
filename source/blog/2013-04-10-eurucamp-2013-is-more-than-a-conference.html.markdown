@@ -4,7 +4,7 @@ date: 2013-04-10
 tags: [eurucamp, jrubyconf]
 author: Florian Gilcher
 body_class: article
-published: false
+published: true
 ---
 
 eurucamp 2013 will be far more than a conference: it will be a week of Ruby goodness in Berlin. To pull that off, we changed our organisation structure and will reintroduce some of the interesting ideas from last year to widen the reach of the camp.
