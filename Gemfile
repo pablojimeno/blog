@@ -33,7 +33,7 @@ group :production do
   gem 'rack-contrib'
   gem 'rack-rewrite'
   # my PRs are waiting to be merged into main repo
-  gem 'rack-robotz',  :git => 'git@github.com:pietia/rack-robotz.git'
+  gem 'rack-robotz',  :git => 'git://github.com/pietia/rack-robotz.git'
 end
 
 # FIXME: Need to set this up with Bundler groups correctly

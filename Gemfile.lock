@@ -7,7 +7,7 @@ GIT
       compass (>= 0.11.1)
 
 GIT
-  remote: git@github.com:pietia/rack-robotz.git
+  remote: git://github.com/pietia/rack-robotz.git
   revision: b853b669e0c1defd38500451e7e0d838ad7938b9
   specs:
     rack-robotz (0.0.1)
