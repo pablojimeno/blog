@@ -1,6 +1,6 @@
 ---
 title: "eurucamp 2013 CFP process"
-date: 2013-03-25
+date: 2013-04-25
 tags: hackdays
 author: Florian Gilcher
 body_class: article
