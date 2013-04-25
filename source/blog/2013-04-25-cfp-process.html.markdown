@@ -1,7 +1,7 @@
 ---
 title: "eurucamp 2013 CFP process"
 date: 2013-04-25
-tags: hackdays
+tags: [eurucamp, talks]
 author: Florian Gilcher
 body_class: article
 published: false
