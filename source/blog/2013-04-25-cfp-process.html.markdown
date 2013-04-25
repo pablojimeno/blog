@@ -4,7 +4,7 @@ date: 2013-04-25
 tags: [eurucamp, talks]
 author: Florian Gilcher
 body_class: article
-published: false
+published: true
 ---
 
 Recently many conferences have begun experimenting with their CFP process. Last year, we had a fairly standard, closed CFP process. We will have a closed process again this year, adopted from [JSConf EU](http://jsconf.eu). The details of our CFP process can be found [here](http://2013.eurucamp.org/cfp). This post explains our goals and takes a look at some other processes.
