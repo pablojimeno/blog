@@ -33,12 +33,12 @@ published: true
 
   * _Rails Routing:_ Matt Patterson will guide us through the intricacies of
   how Rails turns HTTP requests into controller invocations.
-  
+
   * _Single Page Applications with CoffeeScript:_ Andrzej Krzywda will
   illustrate how to be proud of our frontend code.
-  
+
   * _Using Joosy:_ Dirk Holzapfel and Sebastian Burkhart will give a hands-on introduction to Joosy, the browser application framework based on Rails and CoffeeScript.
-  
+
   * _Maintainable CSS with SASS, even in large projects_: Florian Plank will show us the tools for refactoring, structuring and creating better stylesheets.
 
   The detailed schedule for Friday will be coming out soon.
