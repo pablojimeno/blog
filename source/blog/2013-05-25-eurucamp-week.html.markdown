@@ -1,10 +1,10 @@
 ---
 title: "eurucamp week"
-date: 2013-04-02
+date: 2013-05-25
 tags: eurucamp
 author: Florian Gilcher
 body_class: article
-published: false
+published: true
 ---
 
 The [Ruby Berlin e.V.](http://rubyberlin.org/) and the [eurucamp team](http://eurucamp.org) are happy to announce that eurucamp 2013 is more than a conference: eurucamp week is coming!
