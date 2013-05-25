@@ -21,10 +21,10 @@ So, plan accordingly: If you want to enjoy the city a few days, plan your flight
 
 ## August 14. and 15.: JRubyConf.eu
 
-JRubyConf.eu is happening again! This time, though, its a full conference, taking place on the in Berlin. The location is still to be announced. See the [TODO: announcement blog post for details]().
+JRubyConf.eu is happening again! This time, though, its a full conference, taking place on the in Berlin. The location is still to be announced. See the [the website for details](http://2013.jrubyconf.eu).
 
 In parallel, we will still run activities in town, for those that want to spend their time on other things instead.
 
 ## August 16.-18.: eurucamp 2013!
 
-The classic is back! eurucamp 2013 will run again, fundamentally unchanged. The only thing missing is the JRubyConf.eu track on friday, for obvious reasons. If you enjoyed last year, you will enjoy this year! See the [TODO: announcement blog post for details]().
+The classic is back! eurucamp 2013 will run again, fundamentally unchanged. The only thing missing is the JRubyConf.eu track on friday, for obvious reasons. If you enjoyed last year, you will enjoy this year! See the [website for details](http://2013.eurucamp.org).
