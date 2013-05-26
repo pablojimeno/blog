@@ -1,10 +1,10 @@
 ---
 title: "eurucamp 2013 speakers"
-date: 2013-05-25
+date: 2013-05-27
 tags: [eurucamp, talks]
 author: Florian Gilcher
 body_class: article
-published: false
+published: true
 ---
 
 With our CFP over, it is time to announce our first round of speakers. With eurucamp is an event for everyone and our speakers list reflects that. See the full list of currently announced speakers [here](http://2013.eurucamp.org/speakers).

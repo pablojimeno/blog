@@ -1,10 +1,10 @@
 ---
 title: "eurucamp 2013 end of CFP: ask and they will come"
-date: 2013-04-25
+date: 2013-05-27
 tags: [eurucamp, talks]
 author: Florian Gilcher
 body_class: article
-published: false
+published: true
 ---
 
 Last week, our CFP has ended and our speakers were chosen last night. The details of how our CFP process worked can be found [here](http://2013.eurucamp.org/cfp) and the explanation of the goal [here](http://blog.eurucamp.org/2013/04/25/cfp-process). Given the number of goals formulated, we can now give details on how many of them we reached.
