@@ -1,0 +1,30 @@
+---
+title: "eurucamp 2013 speakers"
+date: 2013-05-25
+tags: [eurucamp, talks]
+author: Florian Gilcher
+body_class: article
+published: false
+---
+
+With our CFP over, it is time to announce our first round of speakers. With eurucamp is an event for everyone and our speakers list reflects that. See the full list of currently announced speakers [here](http://2013.eurucamp.org/speakers).
+
+Here comes our first batch of speakers, as an example of the variety of topics we want to span on eurucamp:
+
+README
+
+## Roy Tomeij
+
+Some of you might have seen Roy last year, on tour with an awesome talk about frontend architecture and [Bob Ross](http://www.bobrossquotes.com/). We are happy to announce that he will be one of the cornerstones of this years program. This year, he will present us the "why" instead of the "how" and explain the psychology behind UX design and why its not all "for show".
+
+## Ellen König
+
+Code and Psychology is Ellens interest as well: thats why she studies psychology next to being a software developer. Ellen is one of our local RailsGirls coaches and will expand on the topic of learning. How do we, as developers, keep up to date? See it all in her talk: "practice makes perfect".
+
+## Florian Plank
+
+Florian Plank not only builds awesome frontends, but also beautiful code. Last year, his workshop on frontend and SCSS was very well received. This year, he convinced us with a very interesting proposal: explain visual design through code. We are excited to listen!
+
+## Drew Neil
+
+Mr. Drew "vimcast" Neil, author of "Practical Vim". This year on eurucamp to talk about... parsing VIM. In Ruby. Drew will give us a detailled introduction in one of the most interesting tools used for parsing in the Ruby world: Ragel. 
