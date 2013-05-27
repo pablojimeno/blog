@@ -1,6 +1,6 @@
 ---
 title: "eurucamp 2013 end of CFP: ask and they will come"
-date: 2013-05-27
+date: 2013-05-27 10:00 +00:00
 tags: [eurucamp, talks]
 author: Florian Gilcher
 body_class: article
