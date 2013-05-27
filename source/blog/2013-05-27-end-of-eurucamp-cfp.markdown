@@ -51,4 +51,4 @@ We are very glad on how the eurucamp CFP worked out. If you were not accepted an
 
 Again, thanks to everyone who submitted and keep on submitting!
 
-Also, a huge thank you to [jsconf.eu](http://2013.jsconf.eu/) for creating the original version of our CFP process and expecially to [Jan Lenhardt](http://twitter.com/janl) for dropping by for a long coffee and explaining the (surprisingly pragmatic) reasoning behind all this. Their [call for speakers](http://2013.jsconf.eu/call-for-speakers) is now open as well!
+Also, a huge thank you to [jsconf.eu](http://2013.jsconf.eu/) for creating the original version of our CFP process and expecially to [Jan Lehnardt](http://twitter.com/janl) for dropping by for a long coffee and explaining the (surprisingly pragmatic) reasoning behind all this. Their [call for speakers](http://2013.jsconf.eu/call-for-speakers) is now open as well!
