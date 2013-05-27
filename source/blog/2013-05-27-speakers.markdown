@@ -11,7 +11,7 @@ With our CFP over, it is time to announce our first round of speakers. With euru
 
 Here comes our first batch of speakers, as an example of the variety of topics we want to span on eurucamp:
 
-README
+READMORE
 
 ## Roy Tomeij
 
